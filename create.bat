@@ -1,3 +1,5 @@
+robocopy .\ C:\Users\siemd\Desktop\pws
+cd C:\Users\siemd\Desktop\pws
 pdflatex main
 makeindex main.idx -s StyleInd.ist
 biber main
