@@ -48,7 +48,7 @@
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage{gensymb}
+\usepackage{siunitx}
 
 \usetikzlibrary{arrows}
 
@@ -1429,7 +1429,7 @@ Want elke waarde van $\sin{(x)}$ is gelijk aan 0 als er voor $x$ geldt $x=\{0, \
 \chapter{Kijken naar het oneindige}
 Het heelal bestaat uit miljarden sterrenstelsel, die sterrenstelsels bestaan ook weer uit miljoenen sterren en om die sterren draaien weer een miljoen verschillende planeten. De grootte van het heelal is niet voor te stellen, maar toch is het wetenschappers gelukt om een theorie te bedenken over hoe alles begon en hoe alles wat er in het heelal is er zo gevormd is. Denk maar eens aan hoe een sterrenstelsel er uit ziet. Zoek eens op google naar plaatjes ervan en je ziet dat bijna alle sterrenstelsels een gelijkenis hebben in hun vorm. Maar het is niet zomaar een vorm, het is een fractal. Door aan te nemen dat sterrenstelsels in fractale vormen zijn opgebouwd werden er nieuwe ontdekkingen gedaan over het bestaan van het heelal door simpel terug te rekenen, maar hoe zit dat eigenlijk? Wat is de toepassing van een Fractal en wat heeft het complexe vlak daar mee te maken?
 
-\subsection{Fractals}
+\section{Fractals}
 Fractals zijn oneindige zichzelf herhalende patronen. Als je eenmaal weet hoe deze eruit zien, herken je fractals overal om je heen. 
 Neem nou een boom. Zo bestaat een boom uit een stam met takken, takken met zijtakken, zijtakken met twijgen en twijgen met naalden.
 \begin{figure}[h]
@@ -1446,7 +1446,7 @@ Of wat denk je van de bliksem, de grote bliksemschicht krijgt allemaal vertakkin
 
 Fractals komen overal in de natuur voor. Van de grootste sterrenstelsels in het heelal tot de kleinste planten op aarde, overal lijken kleinere structuren op grotere structuren. Maar fractals kunnen ook worden gebruikt in computermodellen, om zo bijvoorbeeld meer te leren over het ontstaan van sterrenstelsels die met behulp van simulaties kunnen worden uitgevoerd. Of fractals kunnen gebruikt worden door een computer om grote bestanden te doorzoeken. Een iets minder wetenschappelijke toepassing maar wel echt actueel van fractals is de toepassing in computerspellen. Het is een stuk gemakkelijker om een object van een fractal te maken, die tijdens het inzoomen gedetailleerder wordt, dan dat een object pixel voor pixel opgebouwd moet worden. Kortom: fractals zijn overal. Echter: eenvoudig is een fractal niet, dus laten we beginnen bij het begin.
 
-\subsection{Informatie vooraf}
+\section{Informatie vooraf}
 Goed verankerde basiskennis van wiskunde is een voorwaarde om met wiskunde op een hoger niveau te kunnen werken. Dat kan door oefenen, oefenen en nog eens oefenen. Wiskunde is een proces van toepassen van wat je al weet in iets nieuws. Je inzoomen op deze voorkennis van vormen, processen, wetmatigheden en structuren geeft inzicht en begrip. Kortom: Wiskunde leren is fractal. 
 Voordat we ons gaan verdiepen in de diepe troggen van de wiskunde van fractals moeten we ons eerst bewust zijn van wat er allemaal vooraf gebeurt bij het maken van een fractal. 
 \begin{figure}[h]
@@ -1483,7 +1483,7 @@ De $n$ in de formule wordt na verloop van tijd $\infty$: $3\cdot 4^\infty=\infty
 Hier boven is een proces beschreven wat eindeloos door kan blijven gaan. Elke driehoek kan weer opsplitsen in nog meer driehoeken. Uiteindelijk worden de driehoeken zo klein dat ze niet meer te zien zijn met het blote oog. Dit is een van de makkelijkste vormen van een fractal, maar het laat goed zien hoe eindeloos een fractal eigenlijk wel niet is.
 Om de fractals te begrijpen waarbij meer komt kijken dan het voorbeeld hierboven (bijvoorbeeld het complexe vlak) duiken we nog dieper in de theorie van de fractals.
 
-\subsection{Aangetrokken worden door wiskunde}
+\section{Aangetrokken worden door wiskunde}
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx7}
 	\caption{De functie $y=x^2$.}
@@ -1539,10 +1539,10 @@ Als we alles even op een rijtje leggen blijk het volgende:
 In het verdubbelingsgebied is alles voorspelbaar. Daar komt een startwaarde van $x$ komt in een cyclus terecht. Wanneer we een andere startwaarde kiezen, is het begin misschien  verschillend, maar ook dan kom je in dezelfde cyclus terecht. In het chaotisch gebied komt een startwaarde van $x$ niet meer in een cyclus terecht, maar springt op chaotische wijze heen en weer.
 Bovendien blijkt dat voor andere startwaarden, zelfs als ze vlak in de buurt van de eerste liggen, de iteraties al snel van elkaar gaan verschillen.
 
-\subsection{Gevoelens voor wiskunde}
-Deze gevoeligheid en precieze voor de keuze van de startwaarde is kenmerkend voor alle chaotische systemen. Fig. \ref{fig:fx12} die we nu besproken hebben is slechts een simpel voorbeeld. De chaostheorie die in de zeventiger jaren van de vorige eeuw opkwam, ontdekte dat chaotische systemen overal voorkomen. Een bekend en leuk voorbeeld van een chaotisch systeem zijn de processen rond luchtdruk en temperatuur, die zich in de atmosfeer bevinden en zo dus ook het weer bepalen. De Amerikaanse meteoroloog Lorenz ontdekte in die tijd min of meer bij toeval dat de resultaten van zijn modelberekeningen heel anders werden wanneer hij  zijn invoergegevens gebruikte die een fractie verschillend waren. Deze extreme gevoeligheid voor de startwaarde betekent in de praktijk onvoorspelbaarheid. We kunnen bijvoorbeeld bij het weersysteem super erg ons best doen om de beginwaarden zoals de temperaturen of de luchtdrukken nauwkeurig op te meten. Maar hoe precies het ook is er zal altijd een onzekerheid overblijven. Als de temperatuur bijvoorbeeld een bepaalde dag 0,1° verkeerd wordt gemeten, is de afwijking van de weersvoorspelling voor de dag erna al 0,5°. Na een week kan er dan al een verschil van meer dan 3° naast zitten. Een weervoorspelling voor meer dan twee weken is dan niet zinvol meer. Tegenwoordig worden weersvoorspellingen gedaan door het oplossen van een aantal gekoppelde differentiaalvergelijkingen. Van deze differentiaalvergelijkingen zijn meestal geen exacte oplossingen bekend, maar een numerieke doorberekening kan natuurlijk wel worden gedaan met behulp van veel computerwerk. In de praktijk betekent dit dat er met de weergegevens van een bepaalde dag, die van de dag erna kunnen worden berekend. Het blijkt dat gekoppelde differentiaalvergelijkingen instabiel kunnen zijn. Dat betekend dat er een vorm van chaos in voor komt. Hier geldt ook dat kleine verschillen in beginwaarden veroorzaakt door bijvoorbeeld afrondingsfouten. Een enorme impact hebben in het eindresultaat van de berekening.
+\section{Gevoelens voor wiskunde}
+Deze gevoeligheid en precieze voor de keuze van de startwaarde is kenmerkend voor alle chaotische systemen. Fig. \ref{fig:fx12} die we nu besproken hebben is slechts een simpel voorbeeld. De chaostheorie die in de zeventiger jaren van de vorige eeuw opkwam, ontdekte dat chaotische systemen overal voorkomen. Een bekend en leuk voorbeeld van een chaotisch systeem zijn de processen rond luchtdruk en temperatuur, die zich in de atmosfeer bevinden en zo dus ook het weer bepalen. De Amerikaanse meteoroloog Lorenz ontdekte in die tijd min of meer bij toeval dat de resultaten van zijn modelberekeningen heel anders werden wanneer hij  zijn invoergegevens gebruikte die een fractie verschillend waren. Deze extreme gevoeligheid voor de startwaarde betekent in de praktijk onvoorspelbaarheid. We kunnen bijvoorbeeld bij het weersysteem super erg ons best doen om de beginwaarden zoals de temperaturen of de luchtdrukken nauwkeurig op te meten. Maar hoe precies het ook is er zal altijd een onzekerheid overblijven. Als de temperatuur bijvoorbeeld een bepaalde dag $0,1\si{\degree}$ verkeerd wordt gemeten, is de afwijking van de weersvoorspelling voor de dag erna al $0,5\si{\degree}$. Na een week kan er dan al een verschil van meer dan $3\si{\degree}$ naast zitten. Een weervoorspelling voor meer dan twee weken is dan niet zinvol meer. Tegenwoordig worden weersvoorspellingen gedaan door het oplossen van een aantal gekoppelde differentiaalvergelijkingen. Van deze differentiaalvergelijkingen zijn meestal geen exacte oplossingen bekend, maar een numerieke doorberekening kan natuurlijk wel worden gedaan met behulp van veel computerwerk. In de praktijk betekent dit dat er met de weergegevens van een bepaalde dag, die van de dag erna kunnen worden berekend. Het blijkt dat gekoppelde differentiaalvergelijkingen instabiel kunnen zijn. Dat betekend dat er een vorm van chaos in voor komt. Hier geldt ook dat kleine verschillen in beginwaarden veroorzaakt door bijvoorbeeld afrondingsfouten. Een enorme impact hebben in het eindresultaat van de berekening.
 
-\subsection{De Chaostheorie}
+\section{De Chaostheorie}
 De Chaostheorie is een populair wetenschappelijke benaming voor de theorie van de dynamische systemen. Anders dan de benaming waarmee mijn moeder de toestand van mijn slaapkamer thuis doorgaans beschrijft, wordt hier een technisch wiskundige betekenis bedoeld. Of wel: het onderzoek naar omstandigheden waarbij een deterministische chaos optreedt en welke eigenschappen die chaos heeft. Met een deterministische chaos wordt bedoeld dat de schijnbare wanorde toch exact bepaald is en geordend tot stand komt volgens een algoritme bijvoorbeeld een differentiaalvergelijking of een recursieve berekening. Hiermee kan de stabiliteit en betrouwbaarheid van systemen worden gecontroleerd.
 \begin{enumerate}
 \item de complexiteit van het systeem
@@ -1555,7 +1555,7 @@ De Chaostheorie is een populair wetenschappelijke benaming voor de theorie van d
 \end{figure}
 Met de ontwikkeling van de systeemtheorie werd het duidelijk dat dit niet zo is. Zelfs eenvoudige systemen waarin de onderdelen op een niet-lineaire manier beïnvloeden, kunnen het begrip "deterministische chaos" vertonen. Dit kan alleen met behulp van computermodellen worden aangetoond. Het blijkt namelijk dat een zeer kleine verandering in de beginwaarden van een systeem binnen een eindige tijd tot extreem grote veranderingen in de eindwaarde kan zorgen. Een beroemde anekdote is die van de vlinder en de orkaan ook wel bekend als het butterfly effect. Deze is meer bedoeld als verduidelijking van de chaostheorie dan dat deze praktische toepasbaarheid.
 
-\subsection{De vlinder en de orkaan}
+\section{De vlinder en de orkaan}
 Om even een uitstapje te maken van de moeilijke wiskunde is hier een kleine anekdote die te maken heeft met een van de vele chaostheorieën: the butterfly effect.
 De meteoroloog Edward Lorenz introduceerde in 1960 de term The Butterfly Effect. In de anekdote wordt dan gesteld dat een enkele vleugelbeweging van een vlinder in het Amazonegebied voor het verschil kan zorgen voor de weersvoorspelling van of een zonovergoten dag of een hevige storm in Europa: het Butterfly Effect. Hoewel een systeem dus deterministisch kan zijn, wat betekent dat een toekomstige toestand volledig wordt bepaald door de initiële toestand, zonder dat er toeval elementen aan te pas komen, zijn deze systemen dus toch niet voorspelbaar. Deze eigenschap wordt de “deterministische chaos” of kortweg chaos genoemd.
 \begin{figure}[h]
@@ -1569,7 +1569,7 @@ Wanneer Eckels een Tyrannosaurus ziet, raakt hij in paniek en zet per ongeluk ee
 
 Aan dit verhaal is duidelijk te zien wat voor effect een kleine verandering kan hebben in een chaos.
 
-\subsection{Fractals in fractals}
+\section{Fractals in fractals}
 We zijn dan eindelijk aangekomen bij het onderdeel waar we gaan kijken wat een fractal eigenlijk is.
 Fractals zijn meetkundige figuren met als kenmerk dat alle onderdelen nagenoeg dezelfde meetkundige vormen hebben als het origineel maar dan op steeds kleinere schaal. Dat wilt dus zeggen; als je een fractal zou vergroten met een vergrootglas krijg je steeds weer precies hetzelfde plaatje te zien. Ongeacht de plek waar je kijkt binnen het figuur. Een goed voorbeeld hiervan is de beroemde Mandelbrot Fractal, zie Fig. \ref{fig:mf}.
 \begin{figure}[h]
@@ -1605,7 +1605,7 @@ vervolgens wordt hier de 'oude' $c$ bij opgeteld en dan krijg je het volgende.
 
 Hierboven is de eerste stap van het zogenaamde iteratieproces gemaakt. Je kunt zeggen dat de Mandelbrot Fractal uit oneindig veel van dit soort iteratieprocessen bestaat. Deze iteratieprocessen zijn erg belangrijk voor het maken en begrijpen van fractals. We gaan nu dieper in de ontstaan van fractals in het complexe vlak.    
 
-\subsection{Complexe fractals}
+\section{Complexe fractals}
 We zijn eindelijk op het punt gekomen waar we het complexe getal gaan toevoegen aan een Fractal formule. We beginnen weer met de formule $y=x^2+c$. We gebruiken aantrekkingspunten nu niet meer als stukjes van een getallen lijn maar als gedeeltes van het complexe vlak. We beginnen bij Fig. \ref{fig:fx13}. Het grijze vlak geeft hier de aangetrokken getallen aan en het rode sterretje is de aantrekker. In het figuur hiernaast geldt $c=0$ weer. De uitkomst is niet verassend, zoals we al eerder besproken hebben trekken alle reële getallen die tussen -1 en 1 zitten naar het punt 0. In het complexe vlak ziet dat eruit als een cirkelvormig figuur.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx13}
@@ -1650,7 +1650,7 @@ Want met de Mandelbrot fractal is er iets heel bijzonders aan de hand. De Mandel
 	\label{fig:jul2frackleur}
 \end{figure}
 
-\subsection{Het nut van een fractal of een fractal van de nuttigheid?}
+\section{Het nut van een fractal of een fractal van de nuttigheid?}
 De fractale wiskunde had een grote populariteit aan het eind van de vorige eeuw. Het leek wel of men overal een fractal in zag. Maar een fractal is net als een cirkel of een vierkant gewoon een wiskundig begrip. Er zijn verschillende toepassingen voor. De meest in het oog springende is de toepassing bij de zogenaamde Chaostheorie. Zonder fractals is het bijna niet mogelijk om chaos te omschrijven.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{blaadje}
