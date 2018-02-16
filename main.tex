@@ -48,6 +48,7 @@
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackaga{gensymb}
 
 \usetikzlibrary{arrows}
 
@@ -1425,8 +1426,10 @@ Voor $k$ geldt $k=\{1, 2, 3, \ldots\}$ en $k<n$. Dus als voorbeeld, als $n=5$, d
 \end{align*}
 Want elke waarde van $\sin{(x)}$ is gelijk aan 0 als er voor $x$ geldt $x=\{0, \pi, 2\pi, 3\pi, \ldots\}$.
 
-\chapter{Fractals}
-Het heelal bestaat uit miljarden sterrenstelsel, die sterrenstelsels bestaan ook weer uit miljoenen sterren en om die sterren draaien weer een miljoen verschillende planeten. De grootte van het heelal is niet voor te stellen, maar toch is het wetenschappers gelukt om een theorie te bedenken over hoe alles begon en hoe alles wat er in het heelal is er zo gevormd is. Denk maar eens aan hoe een sterrenstelsel er uit ziet. Zoek eens op google naar plaatsjes ervan en je ziet dat bijna alle sterrenstelsels een gelijkenis hebben in hun vorm. Maar het is niet zomaar een vorm, het is een fractal. Door aan te nemen dat sterrenstelsel in een fractale vorm zijn opgebouwd werden er nieuwe ontdekkingen gedaan, over het bestaan van het heelal door simpel terug te rekenen, maar hoe zit dat eigenlijk? Wat is de toepassing van een Fractal en wat heeft het complexe vlak daar mee te maken? 
+\chapter{Kijken naar het oneindige}
+Het heelal bestaat uit miljarden sterrenstelsel, die sterrenstelsels bestaan ook weer uit miljoenen sterren en om die sterren draaien weer een miljoen verschillende planeten. De grootte van het heelal is niet voor te stellen, maar toch is het wetenschappers gelukt om een theorie te bedenken over hoe alles begon en hoe alles wat er in het heelal is er zo gevormd is. Denk maar eens aan hoe een sterrenstelsel er uit ziet. Zoek eens op google naar plaatjes ervan en je ziet dat bijna alle sterrenstelsels een gelijkenis hebben in hun vorm. Maar het is niet zomaar een vorm, het is een fractal. Door aan te nemen dat sterrenstelsels in fractale vormen zijn opgebouwd werden er nieuwe ontdekkingen gedaan over het bestaan van het heelal door simpel terug te rekenen, maar hoe zit dat eigenlijk? Wat is de toepassing van een Fractal en wat heeft het complexe vlak daar mee te maken?
+
+\subsection{Fractals}
 Fractals zijn oneindige zichzelf herhalende patronen. Als je eenmaal weet hoe deze eruit zien, herken je fractals overal om je heen. 
 Neem nou een boom. Zo bestaat een boom uit een stam met takken, takken met zijtakken, zijtakken met twijgen en twijgen met naalden.
 \begin{figure}[h]
@@ -1437,91 +1440,232 @@ Neem nou een boom. Zo bestaat een boom uit een stam met takken, takken met zijta
 Of wat denk je van de bliksem, de grote bliksemschicht krijgt allemaal vertakkingen naar kleinere bliksemschichtjes.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{blisem}
-	\caption{Een grote bliksemschicht.}
-	\label{fig:blisem}
+	\caption{Een bliksemschicht.}
+	\label{fig:bliksem}
 \end{figure}
+
 Fractals komen overal in de natuur voor. Van de grootste sterrenstelsels in het heelal tot de kleinste planten op aarde, overal lijken kleinere structuren op grotere structuren. Maar fractals kunnen ook worden gebruikt in computermodellen, om zo bijvoorbeeld meer te leren over het ontstaan van sterrenstelsels die met behulp van simulaties kunnen worden uitgevoerd. Of fractals kunnen gebruikt worden door een computer om grote bestanden te doorzoeken. Een iets minder wetenschappelijke toepassing maar wel echt actueel van fractals is de toepassing in computerspellen. Het is een stuk gemakkelijker om een object van een fractal te maken, die tijdens het inzoomen gedetailleerder wordt, dan dat een object pixel voor pixel opgebouwd moet worden. Kortom: fractals zijn overal. Echter: eenvoudig is een fractal niet, dus laten we beginnen bij het begin.
 
-\section{Informatie vooraf}
-Goed verankerde basiskennis van wiskunde is voorwaarde om met wiskunde op een hoger niveau te kunnen werken. Dat kan door oefenen, oefenen en nog eens oefenen. Wiskunde is een proces van toepassen van wat je al weet in iets nieuws. Je inzoomen op deze voorkennis van vormen, processen, wetmatigheden en structuren geeft inzicht en begrip. Kortom: Wiskunde leren is fractal. 
-Voordat we ons gaan verdiepen in de diepe troggen van de wiskunde van fractals moeten we ons eerst bewust zijn van wat er allemaal vooraf gebeurt bij het maken van een fractal.
+\subsection{Informatie vooraf}
+Goed verankerde basiskennis van wiskunde is een voorwaarde om met wiskunde op een hoger niveau te kunnen werken. Dat kan door oefenen, oefenen en nog eens oefenen. Wiskunde is een proces van toepassen van wat je al weet in iets nieuws. Je inzoomen op deze voorkennis van vormen, processen, wetmatigheden en structuren geeft inzicht en begrip. Kortom: Wiskunde leren is fractal. 
+Voordat we ons gaan verdiepen in de diepe troggen van de wiskunde van fractals moeten we ons eerst bewust zijn van wat er allemaal vooraf gebeurt bij het maken van een fractal. 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{koch}
 	\caption{Helge von Koch.}
 	\label{fig:koch}
 \end{figure}
-We nemen als voorbeeld de Koch Snowflake. De Zweedse wiskundige Helge von Koch (Fig. \ref{fig:koch} maakte in 1904 de zogenaamde KochCurve (Fig. \ref{fig:fx7})  door uit elk driehoeksbeen het midden uit te halen en daar weer een driehoek neer te zetten, Fig. \ref{fig:drie}. De sneeuwvlok die ontstaat door wiskunde figuren eindeloos volgens eenzelfde patroon te vermenigvuldigen. Neem de gelijkbenige driehoek.
+We nemen als voorbeeld de Koch Snowflake. De Zweedse wiskundige Helge von Koch maakte in 1904 de zogenaamde KochCurve door uit elk driehoeksbeen het midden uit te halen en daar weer een driehoek neer te zetten, zie Fig. \ref{fig:drie}. De sneeuwvlok die ontstaat door wiskunde figuren eindeloos volgens eenzelfde patroon te vermenigvuldigen. Neem de gelijkbenige driehoek. 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{drie}
-	\caption{Driehoeken.}
+	\caption{Driehoeken in driehoeken.}
 	\label{fig:drie}
 \end{figure}
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{vlok}
-	\caption{Het ontstaan van de sneeuwvlok.}
+	\caption{Een sneeuwvlok.}
 	\label{fig:vlok}
 \end{figure}
-De wiskundige formule is eigenlijk heel eenvoudig.
-Je gaat uit van:
-\begin{enumerate}
-\item Eén zijde van een driehoek, wordt omgevormd tot 4 zijden, Fig. \ref{fig:drie};
-\item Een driehoek heeft drie zijden die allen omgevormd worden tot 4 zijden, Fig. \ref{fig:vlok};
-\item Dit herhaalt zich eindeloos...
-\end{enumerate}
 
+De wiskundige formule is eigenlijk heel eenvoudig. Je gaat uit van: 
+\begin{enumerate}
+\item Eén zijde van een driehoek, wordt omgevormd tot 4 zijden, Fig. \ref{fig:drie}
+\item Een driehoek heeft drie zijden die allen omgevormd worden tot 4 zijden, Fig. \ref{fig:vlok}. 
+\item Dit herhaalt zich dus.....eindeloos.
+\end{enumerate}
 Wiskundig geformuleerd:
 \begin{enumerate}
-\item $3\cdot 4^1 = 12$;
-\item $3\cdot 4^2 = 48$;
-\item $3\cdot 4^n = ...$;
+\item $3\cdot 4^1=12$
+\item $3\cdot 4^2=48$
+\item $3\cdot 4^n=\ldots$
 \end{enumerate}
-De $n$ in de formule wordt na verloop van tijd oneindig. Dus: $3\cdot 4^\infty = \infty$.
+De $n$ in de formule wordt na verloop van tijd $\infty$: $3\cdot 4^\infty=\infty$.
 
-Om de fractals te begrijpen waarbij meer komt kijken dan het voorbeeld hierboven (bijvoorbeeld het imaginaire stelsel) duiken we nog dieper in de theorie van de fractals.
+Hier boven is een proces beschreven wat eindeloos door kan blijven gaan. Elke driehoek kan weer opsplitsen in nog meer driehoeken. Uiteindelijk worden de driehoeken zo klein dat ze niet meer te zien zijn met het blote oog. Dit is een van de makkelijkste vormen van een fractal, maar het laat goed zien hoe eindeloos een fractal eigenlijk wel niet is.
+Om de fractals te begrijpen waarbij meer komt kijken dan het voorbeeld hierboven (bijvoorbeeld het complexe vlak) duiken we nog dieper in de theorie van de fractals.
+
+\subsection{Aangetrokken worden door wiskunde}
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx7}
-	\caption{$f(x)=x^2$.}
+	\caption{De functie $y=x^2$.}
 	\label{fig:fx7}
 \end{figure}
-De grafiek (Fig. \ref{fig:fx7} laat een dal parabool zien die het minimum als oorsprong heeft. Om van deze functie de $y$ waarde te kunnen berekenen gaat er in principe niet veel spannends gebeuren. Laten we het getal 2 nemen. Daarvan nemen we het kwadraat. Dat is 4, maar als we daar weer het kwadraat van nemen en daarna weer, dan kom je eerst uit op 16 dan 256, 65536 en ga zo maar door. Totdat de rekenmachine zegt error. Het getal dat uit het voortschrijdende kwadrateren komt wordt te groot voor de rekenmachine om aan te geven. Dit proces noemen we itereren en zal nog terugkomen bij bijvoorbeeld de Mandelbrot Fractal.
-Nemen we het getal 1,01 of 1,4 dan gaat het proces van itereren een stuk langzamer. Als je kijkt naar de grootte van het getal dat er steeds uitkomt na het kwadrateren. Als het een getal is boven de 1 (dus zelfs 1,00000001) gaat het itereren uiteindelijk naar oneindig. Kijken we naar de getallen die kleiner zijn dan 1 bijvoorbeeld 0,5 ligt dat anders. Het kwadraat van 0,5 is namelijk 0,25 en daarvan het kwadraat is 0,0625. Dit gaat in de richting van de nul.
-Dit geldt voor alle getallen kleiner dan 1, Fig. \ref{fig:fx10}.
-\begin{figure}[h]
-	\centering\includegraphics[scale=1]{fx8}
-	\caption{$f(x)=x^2$.}
-	\label{fig:fx8}
-\end{figure}
-Nu hebben alle getallen die groter of kleiner zijn dan 1 een eindstation waar ze uiteindelijk heen gaan namelijk: naar oneindig of naar 0, maar hoe zit het dan met 1? De 1 blijft keurig op zijn plek staan, als je 1 namelijk kwadrateert krijg je 1, hoe vaak je ook blijft kwadrateren. De 1 is dus een scheiding van de getallen die naar 0 gaan en de getallen die naar oneindig gaan. Het punt 0 noemen we een aantrekker. Dit geldt ook voor de negatieve getallen, want getallen groter dan $–1$ gaan naar nul en getallen kleiner dan $-1$ gaan naar -(min)oneindig. Als we dus even terugkomen op de parabool $y=x^2$ heeft de parabool een aantrekker in het punt $x=0$, voor de start waarde tussen $-1$ en 1.
+De grafiek in Fig. \ref{fig:fx7} laat een dal parabool zien die het minimum als oorsprong heeft. Om van deze functie de y waarde te kunnen berekenen gaat er in principe niet veel spannends gebeuren. Laten we het getal 2 nemen. Daarvan nemen we het kwadraat. Dat is 4, maar als we daar weer het kwadraat van nemen en daarna weer, dan kom je eerst uit op 16 dan 256, 65536 en ga zo maar door. Totdat de rekenmachine zegt error. Het getal dat uit het voortschrijdende kwadrateren komt wordt te groot voor de rekenmachine om aan te geven. Dit proces noemen we itereren en zal nog veel terugkomen bij het maken van een fractal. Nemen we het getal 1,01 of 1,4 dan gaat het proces van itereren een stuk langzamer, als je kijkt naar de grootte van het getal dat er steeds uitkomt na het kwadrateren. Als het een getal is boven de 1 (dus zelfs 1,00000001) gaat het itereren uiteindelijk naar oneindig. Kijken we naar de getallen die kleiner zijn dan 1 bijvoorbeeld 0,5 ligt dat anders. Het kwadraat van 0,5 is namelijk 0,25 en daarvan het kwadraat is 0,0625. Dit gaat in de richting van de nul.
+
+Nu hebben alle getallen die groter of kleiner zijn dan 1 een eindstation waar ze uiteindelijk heen gaan namelijk: naar oneindig of naar 0, maar hoe zit het dan met 1? De 1 blijft keurig op zijn plek staan, als je 1 namelijk kwadrateert krijg je 1, hoe vaak je ook blijft kwadrateren. De 1 is dus een scheiding van de getallen die naar 0 gaan (worden aangetrokken) en de getallen die naar oneindig gaan. Het punt 0 noemen we een aantrekker. Dit geldt ook voor de negatieve getallen, want getallen groter dan –1 gaan naar nul en getallen kleiner dan -1 gaan naar (min)oneindig. Als we dus even terugkomen op de parabool, Fig. \ref{fig:fx9} heeft de parabool een aantrekker in het punt $x=0$, voor de start waarde tussen -1 en 1. De groene lijn geeft de weg van het aantrekkingspunt weer.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx9}
-	\caption{$f(x)=x^2$, groene lijn geeft het aantrekkingspunt weer.}
+	\caption{De functie $y=x^2$.}
 	\label{fig:fx9}
 \end{figure}
-Met deze informatie zijn we al een heel stuk op weg, maar met deze toepassingen blijven we met het aantrekkingspunt 0 en zal er dus nooit een mooi groot fractal figuur uitkomen. Daarom moeten we ervoor zorgen dat de parabool waar we het hierboven over hadden moet kunnen worden verplaats. De parabool $y=x^2$ verticaal verplaatsen doen we door er een c bij toe te voegen. De formule wordt dan $y=x^2+c$. Het minimum van de parabool is dan $c$, elk cijfer wat er als c wordt gebruikt staat gelijk aan het minimum van de parabool. Als we dan teruggaan naar het begrip itereren en die toepassing uitvoeren zien we dat er nog steeds een aantrekkingspunt is alleen dat is niet meer 0, er is een ander aantrekkingspunt is gekomen.
+Met deze informatie zijn we al een heel stuk op weg, maar met deze toepassingen blijven we met het aantrekkingspunt 0 en zal er dus nooit een mooi groot fractal figuur uitkomen. Daarom moeten we ervoor zorgen dat de parabool waar we het hierboven over hadden moet kunnen worden verplaats. De parabool verticaal verplaatsen doen we door er een $c$ bij toe te voegen. De formule wordt dan $y=x^2+c$. Het minimum van de parabool is dan $c$, elk cijfer wat er als c wordt gebruikt staat gelijk aan het minimum van de parabool. Als we dan teruggaan naar het begrip itereren en die toepassing uitvoeren zien we dat er nog steeds een aantrekkingspunt is alleen dat is niet meer 0, er is een ander aantrekkingspunt is gekomen, Fig. \ref{fig:fx10}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx10}
-	\caption{$f(x)=x^2$.}
+	\caption{De functie $y=x^2+c$ met $c=-0,5$.}
 	\label{fig:fx10}
 \end{figure}
-We nemen de functie $y = x^2-0,5$ voor de $c= -0,5$. Het aantrekkingspunt is nu  $\ldots$.
+We zien in Fig. \ref{fig:fx10} nu weer een aantrekker alleen is de aantrekker niet nul. De aantrekker is precies het snijpunt van de parabool met de diagonaal. Het andere snijpunt die te zien is in het figuur heeft ook een functie namelijk wanneer de startwaarde bij een iteratie, een getal is die rechts van het snijpunt ligt, gaat die naar oneindig. Voor de snijpunten geldt hiervoor ook de volgende formule $y=x^2+c$ met nog steeds $c=-0,5$, als we die tegen de formule van de parabool zetten krijgen we daar snijpunten uit namelijk: -0,366 en 1,366
+Met alles even op een rijtje voor de formule van $y=x^+c$ met als $c= -0,5$ worden alle getallen met als start waarden tussen -1,366 en 1,366 aangetrokken door het punt -0,366.
 
-De aantrekker is precies het snijpunt van de parabool met de diagonaal. Het andere snijpunt die te zien is in het figuur heeft ook een functie namelijk wanneer de startwaarde bij een iteratie een getal is die rechts van het snijpunt ligt gaat die naar oneindig. Voor de snijpunten geldt hiervoor ook de volgende formule $x=x^2+c$, als we die tegen de formule van de parabool zetten krijgen we daar snijpunten uit namelijk....(dat laat ik zien door het plaatje en dan de oplossing van de snijpunten weer te geven). Alles even op een rijtje voor de formule van $y=x^2=c$ met als $c\ldots$ worden alle getallen met als start waarden tussen $\ldots$ en $-\ldots$ aangetrokken door het punt $\ldots$.
-Als we er nog dieper in zullen gaan komen we misschien wel aan een fractalverslag, dat is een term die wij als groep hebben bedacht, dat is namelijk een verslag waar in je je eindeloos in kan verdiepen. We slaan dan hier ook bij de theorie die je voorafgaand moeten weten van een fractal een klein stukje over en we gaan door met het laatste deel van de theorie namelijk de chaostheorie.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx8}
+	\caption{De functie $y=x^2+c$ met $c=-1$.}
+	\label{fig:fx8}
+\end{figure}
+We bekijken een volgend geval: $c =-1$, Fig. \ref{fig:fx8}.
+Uit figuur 6 blijkt iets opmerkelijks: de startwaarde gaat bij itereren niet naar een vast punt toe, maar blijft heen en weer springen, in dit geval tussen de waarden 0 en -1 (rood aangegeven). We noemen dit een dubbele aantrekker. De getallen zijn eenvoudig na te rekenen Neem als startwaarde 0. Als we die staartwaarde invullen in de parabool geeft de eerste iteratie: -1. Vullen we die waarde opnieuw in, dan vinden we als tweede iteratie 0. Bij andere startwaarden worden de getallen al moeilijker en kan het wat langer duren, maar ook dan kom je uit op dezelfde dubbele aantrekker.
 
-\section{Wat is een fractal}
-Zoals gezegd: Fractals zijn meetkundige figuren met als kenmerk dat alle onderdelen nagenoeg dezelfde meetkundige vormen hebben als het origineel maar dan op steeds kleinere schaal. Dat wilt dus zeggen; als je een fractal zou vergroten met een vergrootglas krijg je steeds weer precies hetzelfde plaatje te zien. Ongeacht de plek waar je kijkt binnen het figuur. Een goed voorbeeld hiervan is de beroemde Mandelbrot Fractal, Fig. \ref{fig:mf}.
+Nu begint het pas echt interessant te worden en komen we dichter bij het begrijpen van een fractal. Als we de formules van hierboven nog eens bekijken en met name $y=x^2+c$ zijn er wat opmerkelijke aspecten die we tegen komen, namelijk: als we de c kleiner maken dan -2 of groter dan 0.25, is er geen aantrekker, elke startwaarde gaat bij itereren naar oneindig. 
+Als we een c nemen tussen -0,75 en 0,25 is er een enkelvoudige aantrekker.
+Een nog interessanter fenomeen is als we de c nog meer verlagen dan -1,25 er een vierdubbele aantrekker komt en als we nog iets kleiner gaan er een klein gebiedje komt met een achtdubbele aantrekker, dat is bijvoorbeeld bij $c=-1,39$. Maken we de c nog iets negatiever, dan stopt deze zogenaamde periodeverdubbeling en gebeurt er iets heel merkwaardigs. Er is namelijk wel een gebied van startwaarden dat wordt aangetrokken, maar het itereren gaat niet naar een aanwijsbare of meervoudige aantrekker toe. Er is geen enkele regelmaat meer te herkennen in hoe de aantrekker zich gedraagt. We noemen dit chaotisch gedrag. De aantrekker die er niet maar toch ook weer wel is, noemen we een Vreemde Aantrekker. Rond dit chaotisch gedrag heeft zich een geheel nieuwe wetenschappelijke studie ontwikkeld namelijk de Chaostheorie hier komen we later nog op terug.
+
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx11}
+	\caption{De functie $y=x^2$ met vertakkingen.}
+	\label{fig:fx11}
+\end{figure}
+Deze opmerkelijke fenomenen zijn allemaal samengevat in Fig. \ref{fig:fx11}. Een korte toelichting aan dit toch wel merkwaardige figuur. Voor elke waarde van $c$ zijn de aantrekkers als rode of groene punten aangegeven op een horizontale lijn door $c$. Bijvoorbeeld voor $c = -1.00$ is er een dubbele aantrekker gevonden: 0 en -1. Trekken we een horizontale lijn door het punt $y = -1$ dan zie je dat die inderdaad de boom snijdt in de punten 0 en -1. 
+Trek je de horizontale lijn wat lager, dan passeer je een vertakking en krijg je vier snijpunten en zo zijn er nog veel meer snijpunten.
+Wat dieper begint de chaos: de hele lijn is groen. 
+De groene waas in het figuur wordt de vertakkingsboom van Feigenbaum genoemd. De vertakking is vernoemd naar de Amerikaanse wiskundige Mitchell Feigenbaum, die rond 1975 onderzoek deed op dit gebied. Als je het plaatsje omkeert lijkt het wel een beetje op een boom, daarom ook de vertakkingsboom. Nu komen we al wel heel dichtbij want de Feigenbaum is namelijk een Fractal!
+
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx12}
+	\caption{De functie $y=x^2+c$ met $c=-1,401155\ldots$.}
+	\label{fig:fx12}
+\end{figure}
+Om terugkomen op de groene waas of beter gezegd de Feigenbaum Fractal, Fig. \ref{fig:fx12}. De boom is in dit figuur uitvergroot en zonder stam (de parabool) weergegeven. In het figuur is te zien dat het gebied waar periodeverdubbeling optreedt eindigt bij een waarde van $c = -1,401155\ldots$ 
+Als de c nog negatiever wordt, dan zijn er nog steeds gebieden met x-waardes die worden aangetrokken, maar er ontstaat geen herhalend patroon. De aantrekker is een vreemde aantrekker geworden. De iteraties die daarna komen leveren chaos op. In dit groene chaosgebied zijn nog wel kleine stukjes regelmaat te zien die vervolgens weer overlopen tot chaos. Met het groene vlak is duidelijk te zien dat we niet kunnen voorspellen wat er gaat gebeuren, dat noemen we chaos. 
+Als we alles even op een rijtje leggen blijk het volgende: 
+In het verdubbelingsgebied is alles voorspelbaar. Daar komt een startwaarde van $x$ komt in een cyclus terecht. Wanneer we een andere startwaarde kiezen, is het begin misschien  verschillend, maar ook dan kom je in dezelfde cyclus terecht. In het chaotisch gebied komt een startwaarde van $x$ niet meer in een cyclus terecht, maar springt op chaotische wijze heen en weer.
+Bovendien blijkt dat voor andere startwaarden, zelfs als ze vlak in de buurt van de eerste liggen, de iteraties al snel van elkaar gaan verschillen.
+
+\subsection{Gevoelens voor wiskunde}
+Deze gevoeligheid en precieze voor de keuze van de startwaarde is kenmerkend voor alle chaotische systemen. Fig. \ref{fig:fx12} die we nu besproken hebben is slechts een simpel voorbeeld. De chaostheorie die in de zeventiger jaren van de vorige eeuw opkwam, ontdekte dat chaotische systemen overal voorkomen. Een bekend en leuk voorbeeld van een chaotisch systeem zijn de processen rond luchtdruk en temperatuur, die zich in de atmosfeer bevinden en zo dus ook het weer bepalen. De Amerikaanse meteoroloog Lorenz ontdekte in die tijd min of meer bij toeval dat de resultaten van zijn modelberekeningen heel anders werden wanneer hij  zijn invoergegevens gebruikte die een fractie verschillend waren. Deze extreme gevoeligheid voor de startwaarde betekent in de praktijk onvoorspelbaarheid. We kunnen bijvoorbeeld bij het weersysteem super erg ons best doen om de beginwaarden zoals de temperaturen of de luchtdrukken nauwkeurig op te meten. Maar hoe precies het ook is er zal altijd een onzekerheid overblijven. Als de temperatuur bijvoorbeeld een bepaalde dag 0,1° verkeerd wordt gemeten, is de afwijking van de weersvoorspelling voor de dag erna al 0,5°. Na een week kan er dan al een verschil van meer dan 3° naast zitten. Een weervoorspelling voor meer dan twee weken is dan niet zinvol meer. Tegenwoordig worden weersvoorspellingen gedaan door het oplossen van een aantal gekoppelde differentiaalvergelijkingen. Van deze differentiaalvergelijkingen zijn meestal geen exacte oplossingen bekend, maar een numerieke doorberekening kan natuurlijk wel worden gedaan met behulp van veel computerwerk. In de praktijk betekent dit dat er met de weergegevens van een bepaalde dag, die van de dag erna kunnen worden berekend. Het blijkt dat gekoppelde differentiaalvergelijkingen instabiel kunnen zijn. Dat betekend dat er een vorm van chaos in voor komt. Hier geldt ook dat kleine verschillen in beginwaarden veroorzaakt door bijvoorbeeld afrondingsfouten. Een enorme impact hebben in het eindresultaat van de berekening.
+
+\subsection{De Chaostheorie}
+De Chaostheorie is een populair wetenschappelijke benaming voor de theorie van de dynamische systemen. Anders dan de benaming waarmee mijn moeder de toestand van mijn slaapkamer thuis doorgaans beschrijft, wordt hier een technisch wiskundige betekenis bedoeld. Of wel: het onderzoek naar omstandigheden waarbij een deterministische chaos optreedt en welke eigenschappen die chaos heeft. Met een deterministische chaos wordt bedoeld dat de schijnbare wanorde toch exact bepaald is en geordend tot stand komt volgens een algoritme bijvoorbeeld een differentiaalvergelijking of een recursieve berekening. Hiermee kan de stabiliteit en betrouwbaarheid van systemen worden gecontroleerd.
+\begin{enumerate}
+\item de complexiteit van het systeem
+\item de verscheidenheid van de factoren die veranderingen in die systemen veroorzaakten 
+\end{enumerate}
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{chaos}
+	\caption{Herkenbare chaos.}
+	\label{fig:chaos}
+\end{figure}
+Met de ontwikkeling van de systeemtheorie werd het duidelijk dat dit niet zo is. Zelfs eenvoudige systemen waarin de onderdelen op een niet-lineaire manier beïnvloeden, kunnen het begrip "deterministische chaos" vertonen. Dit kan alleen met behulp van computermodellen worden aangetoond. Het blijkt namelijk dat een zeer kleine verandering in de beginwaarden van een systeem binnen een eindige tijd tot extreem grote veranderingen in de eindwaarde kan zorgen. Een beroemde anekdote is die van de vlinder en de orkaan ook wel bekend als het butterfly effect. Deze is meer bedoeld als verduidelijking van de chaostheorie dan dat deze praktische toepasbaarheid.
+
+\subsection{De vlinder en de orkaan}
+Om even een uitstapje te maken van de moeilijke wiskunde is hier een kleine anekdote die te maken heeft met een van de vele chaostheorieën: the butterfly effect.
+De meteoroloog Edward Lorenz introduceerde in 1960 de term The Butterfly Effect. In de anekdote wordt dan gesteld dat een enkele vleugelbeweging van een vlinder in het Amazonegebied voor het verschil kan zorgen voor de weersvoorspelling van of een zonovergoten dag of een hevige storm in Europa: het Butterfly Effect. Hoewel een systeem dus deterministisch kan zijn, wat betekent dat een toekomstige toestand volledig wordt bepaald door de initiële toestand, zonder dat er toeval elementen aan te pas komen, zijn deze systemen dus toch niet voorspelbaar. Deze eigenschap wordt de “deterministische chaos” of kortweg chaos genoemd.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{bradbury}
+	\caption{A sound of Thunder, door Bradbury.}
+	\label{fig:bradbury}
+\end{figure}
+Leuke associatie is het feit dat in 4V op het Griftland College één van de short stories in TW2 bij het vak Engels gaat over het Butterfly effect. Dit verhaal heette: Sound of Thunder, geschreven door Ray Bradbury:  "In het jaar 2055 heeft de mens de technologie voor tijdreizen ontwikkeld. Er worden nu onder andere safari’s georganiseerd voor jagers die graag eens op dinosauriërs willen jagen. Er zijn echter wel enkele veiligheidsregels van kracht die moeten voorkomen dat het verleden per ongeluk wordt veranderd; de jagers mogen alleen dieren doden die anders ook rond die tijd gestorven zouden zijn, moeten te allen tijde op een speciaal aangegeven pad blijven, mogen alleen goedgekeurde dieren (zonder toekomst) schieten en mogen niks mee terugnemen.\\
+Een jager genaamd Eckels gaat op zo’n safari, samen met de gids Travis, diens assistent Lesperance, en twee medejagers; Billings en Kramer. Vlak voor hun vertrek naar het verleden wordt onthuld dat Keith de presidentsverkiezingen heeft gewonnen van de fascistische kandidaat Deutscher.\\
+Wanneer Eckels een Tyrannosaurus ziet, raakt hij in paniek en zet per ongeluk een stap buiten het pad. Terug in het heden blijkt hij bij zijn misstap een vlinder te hebben verpletterd. Dit heeft vergaande gevolgen voor de loop van de tijdlijn, die sterk begint te veranderen. Het begint met subtiele veranderingen zoals Engelse woorden die opeens anders worden uitgesproken (in 1960 vertaald tot N.V. Teit Sefarie), maar gaat steeds verder. Zo blijkt Deutscher opeens de verkiezingen te hebben gewonnen in plaats van Keith. Eckels smeekt Travis terug te mogen naar het verleden in de hoop zijn fout recht te zetten, maar in plaats daarvan richt Travis zijn geweer op hem. Het laatste wat Eckels hoort is “het geluid van gedonder”.
+
+Aan dit verhaal is duidelijk te zien wat voor effect een kleine verandering kan hebben in een chaos.
+
+\subsection{Fractals in fractals}
+We zijn dan eindelijk aangekomen bij het onderdeel waar we gaan kijken wat een fractal eigenlijk is.
+Fractals zijn meetkundige figuren met als kenmerk dat alle onderdelen nagenoeg dezelfde meetkundige vormen hebben als het origineel maar dan op steeds kleinere schaal. Dat wilt dus zeggen; als je een fractal zou vergroten met een vergrootglas krijg je steeds weer precies hetzelfde plaatje te zien. Ongeacht de plek waar je kijkt binnen het figuur. Een goed voorbeeld hiervan is de beroemde Mandelbrot Fractal, zie Fig. \ref{fig:mf}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{mf}
-	\caption{De mandelbrot fractal.}
+	\caption{Mandelbrot fractal.}
 	\label{fig:mf}
 \end{figure}
-De Mandelbrot Fractal is vernoemd naar de Poolse wiskundige Benoit Mandelbrot die in de zeventiger jaren van de vorige eeuw onderzoek deed naar fractals. In die tijd werd voor het eerst mogelijk om op de computer graphics te maken. De Mandelbrot Fractal werd in 1991 vermeld in het Guinessbook of Records als "het meest ingewikkelde wiskundige object." 
-Het zwarte figuur in het midden in Fig. \ref{fig:mf} wordt ook wel een cardioïde genoemd, is omgeven door een gloeiende rand met in het midden van het figuur aan de buitenkant een soort naald. Het is duidelijk te zien dat op deze naald allemaal kleine cardioïden zitten. Een verdere uitvergroting in dit figuur doet vermoeden dat er nog veel meer hiervan zijn. Dat is ook het geval. Het zijn er zelfs oneindig veel, steeds kleiner en kleiner. Alle punten binnen deze fractal zijn aangrenzende punten. Dit is een bewezen gegeven. Deze fractal is dus samenhangend ofwel gesloten. 
-Laten we eens wiskundig naar deze fractal kijken. De Mandelbrot Fractal is eigenlijk een verzameling van complexe getallen en is ontstaan door een complexe wiskundige functie die herhaaldelijk is uitgevoerd. De fractal wordt hier dus bepaald aan de hand van een differentievergelijking. Laten we een kijkje nemen in de bewerking.
-Bij de bewerking van de Mandelbrot Fractal wordt eerst het kwadraat genomen van een complex getal en daarna wordt het oorspronkelijke getal hierbij opgeteld. In de formule-taal ziet dat er als volgt uit.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{benoitm}
+	\caption{Benoit Mandelbrot.}
+	\label{fig:benoitm}
+\end{figure}
+De Mandelbrot Fractal is vernoemd naar de Poolse wiskundige Benoit Mandelbrot (Fig. \ref{fig:benoitm}) die in de zeventiger jaren van de vorige eeuw onderzoek deed naar fractals. In die tijd werd voor het eerst mogelijk om op de computer graphics te maken. De Mandelbrot Fractal werd in 1991 vermeld in het Guinessbook of Records als "het meest ingewikkelde wiskundige object."
 
+Het zwarte figuur in het midden van Fig. \ref{fig:mf}, ook wel een cardioïde genoemd, is omgeven door een gloeiende rand met in het midden van het figuur aan de buitenkant een soort naald. Het is duidelijk te zien dat op deze naald allemaal kleine cardioïden zitten. Een verdere uitvergroting in dit figuur doet vermoeden dat er nog veel meer hiervan zijn. Dat is ook het geval. Het zijn er zelfs oneindig veel, steeds kleiner en kleiner. Alle punten binnen deze fractal zijn aangrenzende punten. Dit is een bewezen gegeven. Deze fractal is dus samenhangend ofwel gesloten.
 
+Laten we eens wiskundig naar deze fractal kijken. Bij de bewerking van de Mandelbrot Fractal wordt eerst het kwadraat genomen van een complex getal en daarna wordt het oorspronkelijke getal hierbij opgeteld. In de formule-taal ziet dat er als volgt uit:
 
+We gebruiken hiervoor de formule $c=2+0,5i$. We kwadrateren deze formule met behulp van het merkwaardig product
+\begin{displaymath}
+{\left(x+y\right)}^2=x^2+2xy+y^2.
+\end{displaymath}
+Dat levert ons het volgende op.
+\begin{align*}
+{\left(2+0,5i\right)}^2 &= 2^2+2\cdot 2\cdot 0,5i+0,5^2\cdot i^2\\
+&= 4+2i+0,25\cdot -1\\
+&= 3,75+2i.
+\end{align*}
+vervolgens wordt hier de 'oude' $c$ bij opgeteld en dan krijg je het volgende.
+\begin{displaymath}
+(3,75+2i)+(2+0,5i)=5,75+2,5i
+\end{displaymath}
+
+Hierboven is de eerste stap van het zogenaamde iteratieproces gemaakt. Je kunt zeggen dat de Mandelbrot Fractal uit oneindig veel van dit soort iteratieprocessen bestaat. Deze iteratieprocessen zijn erg belangrijk voor het maken en begrijpen van fractals. We gaan nu dieper in de ontstaan van fractals in het complexe vlak.    
+
+\subsection{Complexe fractals}
+We zijn eindelijk op het punt gekomen waar we het complexe getal gaan toevoegen aan een Fractal formule. We beginnen weer met de formule $y=x^2+c$. We gebruiken aantrekkingspunten nu niet meer als stukjes van een getallen lijn maar als gedeeltes van het complexe vlak. We beginnen bij Fig. \ref{fig:fx13}. Het grijze vlak geeft hier de aangetrokken getallen aan en het rode sterretje is de aantrekker. In het figuur hiernaast geldt $c=0$ weer. De uitkomst is niet verassend, zoals we al eerder besproken hebben trekken alle reële getallen die tussen -1 en 1 zitten naar het punt 0. In het complexe vlak ziet dat eruit als een cirkelvormig figuur.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx13}
+	\caption{Fractal in complex vlak met $c=0$.}
+	\label{fig:fx13}
+\end{figure}
+Als we de $c$ gaan veranderen veranderd de vorm van het figuur ook. Als we $c=-0,5$ nemen hadden we gevonden dat alle getallen met als start waarden tussen -1,366 en 1,366 aangetrokken door het punt -0,366. Als we die uitkomsten in een complex vlak zouden zetten. Ziet het er uit als in Fig. \ref{fig:fx14}. De rafelige randen van dit figuur begint al meet te lijken op een fractal maar is nog aardig af te leiden van de cirkelvorming.
+Om van die afleiding af te komen hebben we meer dan een aantrekkingspunt nodig. 
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx14}
+	\caption{Fractal in complex vlak met $c=-0,5$.}
+	\label{fig:fx14}
+\end{figure}
+Bij $c=-1$ hadden we gezien dat er twee aantrekkingspunten zijn. De waardes van die aantrekkingspunten zijn 0 en -1. De vorm die hier uitkomt is voor het eerst bedacht zonder computer of rekenmachine door de Franse wiskundige Gaston Julia. En is te zien in Fig. \ref{fig:julfrac}. Dit soort figuren worden daarom ook Julia fractals genoemd. Dit figuur is al minder af te leiden van een cirkel en heeft met de sprietjes iets weg van de Mandelbrot Fractal.
+Bij een Julia Fractal zijn de gebieden van het complexe vlak (in de tekening aan geven als grijs vlakdeel) voor gegeven waarde van $c$, bij het irriteren niet naar oneindig gegaan.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{julfrac}
+	\caption{Fractal in complex vlak met $c=-1$.}
+	\label{fig:julfrac}
+\end{figure}
+
+Tot nu toe zijn we bij reële getallen gebleven als het ging om de waarde van $c$. Als we een complex getal nemen voor $c$ bijvoorbeeld: $\Re(c) = - 0.5$ en $\Im(c) = 0.55$ is het fractale karakter waar we uiteindelijk heen willen goed te zien in figuur 13. De vijf dubbele aantrekkers zijn nu zelf ook complex geworden. 
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{fx15}
+	\caption{Fractal in complex vlak met $\Re(c) = - 0.5$ en $\Im(c) = 0.55$.}
+	\label{fig:fx15}
+\end{figure}
+Om naar een bekende Julia Fractal te kunnen gaan moeten we nog een stapje verder en nemen we $\Re(c) = 0.325$ en $\Im(c) = 0.417$. De negenvoudige aantrekkers hebben een futuristische vorm gecreëerd dat is goed te zien in Fig. \ref{fig:jul2frac}.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{jul2frac}
+	\caption{Fractal in complex vlak met $\Re(c) = 0.325$ en $\Im(c) = 0.417$.}
+	\label{fig:jul2frac}
+\end{figure}
+
+Zoals eerder is gezegd geeft het grijze vlak de aangetrokken punten weer. De rest eromheen itereert naar het oneindige. Met die kennis kleuren we Fig. \ref{fig:jul2frac} in. We tekenen de vorm zelf zwart. Van de gebieden die buiten het figuur liggen bepalen we hoeveel keer het nodig is om te irriteren voordat de uitkomst de zelf gekozen grenswaarde heeft bereikt. Aan de hand van de hoeveelheid iteraties geven we elk punt een kleur. Op die manier hebben we Fig. \ref{fig:jul2frac} ingetekend. De c waarde heeft dezelfde waarde als Fig. \ref{fig:jul2frac}. De kleuren zijn als volgt te verklaren, naarmate het langer duurt voor het itereren de grenswaarde heeft bereikt, hoe lichter de kleur is. Zo kan er veel geknutseld worden met Fractals en kunnen er mooie figuren uitkomen.
+
+We hebben nu gezien hoe een Julia Fractal wordt gemaakt met behulp van complexe getallen. In het begin hebben we gezien dat de reële getallen binnen -2 en 0,25. Dat is een makkelijke en duidelijke richtlijn om een Julia fractal te maken met behulp van reële getallen. Die richtlijn bestaat er ook voor de complexe getallen en is terug te vinden in de Mandelbrot fractal.
+Want met de Mandelbrot fractal is er iets heel bijzonders aan de hand. De Mandelbrot Fractal is namelijk een verzameling van alle complexe c-waarden die aantrekkingsgebieden creëren in een Julia Fractal.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{jul2frackleur}
+	\caption{Fig. \ref{fig:jul2frac} ingekleurd.}
+	\label{fig:jul2frackleur}
+\end{figure}
+
+\subsection{Het nut van een fractal of een fractal van de nuttigheid?}
+De fractale wiskunde had een grote populariteit aan het eind van de vorige eeuw. Het leek wel of men overal een fractal in zag. Maar een fractal is net als een cirkel of een vierkant gewoon een wiskundig begrip. Er zijn verschillende toepassingen voor. De meest in het oog springende is de toepassing bij de zogenaamde Chaostheorie. Zonder fractals is het bijna niet mogelijk om chaos te omschrijven.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{blaadje}
+	\caption{Een blaadje.}
+	\label{fig:blaadje}
+\end{figure}
+Een andere theorie waar Fractals in worden gebruikt is debifurcatietheorie, die theorie beschrijft hoe het evenwichtsgedrag van een dynamisch systeem verandert onder invloed van externe factoren. Uit deze theorie komt de fractal De Poincaré-afbeelding die ook onder meer gebuikt wordt bij de chaostheorie. 
+Fractals worden ook gebruikt bij het karateriseren van kleine of ruwe structuren, bijvoorbeeld blaadjes van varens met een ruwe achterkant of de takstructuur van een boom. Misschien wel de meest actuele toepassing van fractals is het voorspellen van gebeurtenissen. Zoals in de inleiding staat wordt het ontstaan van het heelal aan de hand van fractals voorspeld, maar ook het gedrag van de beurs wordt aan de hand van een fractal voorspeld.
+\begin{figure}[h]
+	\centering\includegraphics[scale=1]{superfrac}
+	\caption{De wonderschone fractal.}
+	\label{fig:superfrac}
+\end{figure} 
+Een leuk voorbeeld over voorspellen is bij het boren naar olie. Bij het boren naar olie gaat de boor waar mee gegraven wordt opeens heftig trillen en gaat kapot, zonder een concrete aanleiding. De trillingen lijken op een fractal waarmee men vervolgens door te modeleren een simulatie van het boorproces mee simuleert en zo de oorzaak zoeken van de trillingen, zodat de boor niet opnieuw stuk gaat.
+De schoonheid van fractals mag zeker niet worden vergeten en is ook een van de redenen waarom het zo populair is geworden.
 
 %----------------------------------------------------------------------------------------
 %	PART 3
