@@ -1,3 +1,4 @@
+taskkill /F /IM MicrosoftEdge.exe /T
 robocopy .\ C:\Users\siemd\Desktop\pws /e
 cd C:\Users\siemd\Desktop\pws
 pdflatex main
