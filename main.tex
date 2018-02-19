@@ -763,15 +763,15 @@ De klokken met hun wijzers gaan nu alleen nog maar over specifieke momenten in d
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=.8]{data-2-proj}
-	\caption{Een andere willekeurige dataset dit geprojecteerd is op een 2D-vlak.}
+	\caption{Een andere willekeurige dataset die geprojecteerd is op een 2D-vlak.}
 	\label{fig:data-2-proj}
 \end{figure}
 
-Waar je naar kijkt in Fig. \ref{fig:data-2-proj}, is dezelfde soort grafiek als we al eerder gezien hebben. Deze is nu in het rood geschetst, maar nu zien we ook een diagram die ons minder bekend voorkomt. En toch lijkt het op iets wat we al eerder bekeken hebben. Het is een cirkel met daarin alle metingen. Eigenlijk is dit hetzelfde als we net zagen, die klokken met een enkele wijzer, maar nu staan alle gegevens erin als punten. Expres zijn de metingen nog niet als wijzers weergegeven, daar komen we zo op terug. Er is iets moois gebeurd. In plaats van dat er nu maar een enkele meting tweedimensionaal is geworden, hebben we nu alle data tweedimensionaal beschikbaar. Daar kunnen we leuke dingen mee doen.
+Waar je naar kijkt in Fig. \ref{fig:data-2-proj}, is dezelfde soort grafiek als die we al eerder gezien hebben. Deze is nu in het rood geschetst, maar nu zien we ook een diagram die ons minder bekend voorkomt. En toch lijkt het op iets wat we al eerder bekeken hebben. Het is een cirkel met daarin alle metingen. Eigenlijk is dit hetzelfde als we net zagen, die klokken met een enkele wijzer, maar nu staan alle gegevens erin als punten. Expres zijn de metingen nog niet als wijzers weergegeven, daar komen we zo op terug. Er is iets moois gebeurd. In plaats van dat er nu maar een enkele meting tweedimensionaal is geworden, hebben we nu alle data tweedimensionaal beschikbaar. Daar kunnen we leuke dingen mee doen.
 
-Hierbij moet wel gezegd worden dat op de afbeelding, de frequentie vaststaat. Dat wil zeggen dat er één frequentie gekozen is om het diagram te plotten. Het is veel interessanter om te kijken naar wat er gebeurt als we de frequentie aanpassen. En wat blijkt, als de frequentie groter wordt, dan verspreid het signaal zich over de gehele cirkel. Dit is te zien in een latere figuur.
+Hierbij moet wel gezegd worden dat op de afbeelding, de frequentie vaststaat. Dat wil zeggen dat er één frequentie gekozen is om het diagram te plotten. Het is veel interessanter om te kijken naar wat er gebeurt als we de frequentie aanpassen. En wat blijkt, als de frequentie groter wordt, dan verspreidt het signaal zich over de gehele cirkel. Dit is te zien in een latere figuur.
 
-Maar wat is er nu met de tijd gebeurd? De tijd is veranderd in de positie van de wijzer rond de cirkel. De wijzer zal later in de tijd meer afstand afgelegd hebben dan wanneer hij net begonnen is. Eigenlijk is er vanaf nu dus geen sprake meer over tijd, maar over de positie van de wijzer.
+Maar wat is er nu met de tijd gebeurd? De tijd is veranderd in de positie van de wijzer rond de cirkel. De wijzer zal later in de tijd meer afstand afgelegd hebben dan wanneer hij net begonnen is. Eigenlijk is er vanaf nu dus geen sprake meer van tijd, maar van de positie van de wijzer.
 
 \subsection{Vectoren}
 Dus nu hebben we een hele hoop metingen in twee dimensies. Ieder punt leeft in twee dimensies en is dus een lijn. Zo'n lijn noemen we een vector. We kunnen vectoren bij elkaar optellen, zie Fig. \ref{fig:vec+}. Dat werkt als volgt. Men neme een vector $\vec{a}$ en een vector $\vec{b}$. Beide vectoren samen noemen we vector $\vec{c}$. Dus
@@ -801,7 +801,7 @@ Men kan een vector dus beschrijven als een verplaatsing in x- en y-richting, maa
 \end{figure}
 
 \subsection{Transformeren}
-Terug naar de cirkel waar we al onze data op gezet hebben. Vanaf hier gaat het hard, dus wees gewaarschuwd. Gezegd was, dat de frequentie van de cirkel veranderd kon worden en dat daardoor verschillende figuren te zien zouden zijn. Dat beelden we in Fig. \ref{fig:data-2-proj-2} door de figuren te laten zien die horen bij een paar verschillende frequenties. Dit is te zien in de cirkels. De blauwe lijn bestaat uit al onze metingen die aan het begin van het onderzoek gemaakt zijn. Deze veranderd dus door het kiezen van andere frequenties. Steeds is rechtsboven de gemiddelde vector van alle vectoren te zien. Dit is als het ware alle vectoren bij elkaar opgeteld. Dus alle vectoren, punten die we tweedimensionaal gemaakt hebben door ze op een cirkel te projecteren, tellen we bij elkaar op zoals we dat eerder gedaan hebben. In plaats van twee vectoren, hebben we er nu vele malen meer, maar het principe werkt hetzelfde.
+Terug naar de cirkel waar we al onze data op gezet hebben. Vanaf hier gaat het hard, dus wees gewaarschuwd. Gezegd was, dat de frequentie van de cirkel verandert kon worden en dat daardoor verschillende figuren te zien zouden zijn. Dat beelden we in Fig. \ref{fig:data-2-proj-2} door de figuren te laten zien die horen bij een paar verschillende frequenties. Dit is te zien in de cirkels. De blauwe lijn bestaat uit al onze metingen die aan het begin van het onderzoek gemaakt zijn. Deze veranderd dus door het kiezen van andere frequenties. Steeds is rechtsboven de gemiddelde vector van alle vectoren te zien. Dit is als het ware alle vectoren bij elkaar opgeteld. Dus alle vectoren, punten die we tweedimensionaal gemaakt hebben door ze op een cirkel te projecteren, tellen we bij elkaar op zoals we dat eerder gedaan hebben. In plaats van twee vectoren, hebben we er nu vele malen meer, maar het principe werkt hetzelfde.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{data-2-proj-2}
@@ -816,7 +816,7 @@ Het diagram dat ontstaat is steeds rechtsonder weergegeven. Er zijn drie duideli
 
 Zoals gezegd, is de horizontale as nu niet meer de tijd aan het aangeven, maar de frequentie. We zijn naar een ander domein gereisd door de fouriertransformatie. Namelijk van het tijd- naar het frequentiedomein \cite{fd}.
 
-Simpel gezegd is het verschil tussen het tijd- en frequentiedomein dat een tijddomein-grafiek laat zien hoe een signaal veranderd in de tijd, terwijl een frequentiedomein-grafiek laat zien hoe veel van een signaal in een bepaald frequentiegebied ligt.
+Simpel gezegd is het verschil tussen het tijd- en frequentiedomein dat een tijddomein-grafiek laat zien hoe een signaal verandert in de tijd, terwijl een frequentiedomein-grafiek laat zien hoe veel van een signaal in een bepaald frequentiegebied ligt.
 
 Dat laatste is in essentie wat de fouriertransformatie doet: een grafiek transformeren van het tijd- naar het frequentiedomein. Later zien we dat het ook andersom kan, dus van het frequentie- naar het tijddomein.
 
@@ -843,9 +843,9 @@ Neem nu Fig. \ref{fig:bas}. De eerste afbeelding toont het tijd-tegen-amplituded
 In deze sectie gaan we redelijk pittige wiskunde behandelen. Het is moeilijk om dit eenvoudig uit te leggen. Niet-wiskundig aangelegde mensen kunnen ervoor kiezen dit gedeelte over te slaan, hoewel dit wel een cruciaal deel is om de fouriertransformatie door en door te begrijpen.
 
 \subsection{Fourierreeksen}
-Stel je hebt een functie $f(x)$. Wat deze functie ook mag zijn, hoe raar ook, het is altijd mogelijk om hem te recreëren door sinussen en cosinussen herhaaldelijk aan elkaar te plakken \cite{fs}. Dit kan je oneindig doen zodat je een zo goed als perfecte benadering hebt van de oorspronkelijke functie. Wanneer je dit toepast, dan spreek je van een het maken van een fourierreeks.
+Stel je hebt een functie $f(x)$. Wat deze functie ook mag zijn, hoe raar ook, het is altijd mogelijk om hem te benaderen door sinussen en cosinussen herhaaldelijk aan elkaar te plakken \cite{fs}. Dit kan je oneindig doen zodat je een zo goed als perfecte benadering hebt van de oorspronkelijke functie. Wanneer je dit toepast, dan spreek je van een het maken van een fourierreeks.
 
-Bekijk Fig. \ref{fig:fourierreeksen}. Hierin is een vierkante golf te zien. Deze wordt benaderd door een fourierreeks. Je ziet dat in het bovenste diagram eerst een grote globale rode lijn is getekend die al redelijk veel bepaald. Er zijn meerderen sinusoïden getekend. Steeds worden ze iets nauwkeuriger, maar opvallend is, is dat de bovenste wel heel duidelijk aangeeft waar de vierkante golf zich bevindt.
+Bekijk Fig. \ref{fig:fourierreeksen}. Hierin is een vierkante golf te zien. Deze wordt benaderd door een fourierreeks. Je ziet dat in het bovenste diagram eerst een grote globale rode lijn is getekend die al redelijk veel bepaalt. Er zijn meerderen sinusoïden getekend. Steeds worden ze iets nauwkeuriger, maar opvallend is, is dat de bovenste wel heel duidelijk aangeeft waar de vierkante golf zich bevindt.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fourierreeksen}
@@ -855,12 +855,12 @@ Bekijk Fig. \ref{fig:fourierreeksen}. Hierin is een vierkante golf te zien. Deze
 
 Fourier kwam achter deze reeksen in zijn zoektocht naar het oplossen van de diffusievergelijking in een metalen plaat. Dit is een partiële differentievergelijking. Dat is een ander woord voor niet zo makkelijke wiskunde.
 
-De fourierreeksen worden nu in zeer veel verschillende gebieden gebruikt. Hoewel het was bedacht om de diffusievergelijking op te lossing, werd de techniek toegepast op een breed scala aan andere wiskundige en natuurkundige problemen. Een paar van deze problemen zijn te vinden in studies als elektrotechniek, vibratieanalyse, akoestiek, optiek, signaalverwerking, digitale beeldbewerking, kwantummechanica, econometrie, etc. Het is eigenlijk te veel om op te noemen, maar het mag duidelijk zijn dat de heer Joseph Fourier een baanbrekende uitvinding heeft gedaan.
+De fourierreeksen worden nu in zeer veel verschillende gebieden gebruikt. Hoewel het was bedacht om de diffusievergelijking op te lossen, werd de techniek toegepast op een breed scala aan andere wiskundige en natuurkundige problemen. Een paar van deze problemen zijn te vinden in studies als elektrotechniek, vibratieanalyse, akoestiek, optiek, signaalverwerking, digitale beeldbewerking, kwantummechanica, econometrie, etc. Het is eigenlijk te veel om op te noemen, maar het mag duidelijk zijn dat de heer Joseph Fourier een baanbrekende uitvinding heeft gedaan.
 
 \subsection{Continue fouriertransformatie}
 Een fourierreeks is dus een stapel sinusoïden die samen een functie bijna exact benaderen. Ook weten we inmiddels dat we kunnen veranderen tussen tijd- en frequentiedomein. Hoe dat laatste moet, daar gaan we het nu over hebben.
 
-De vergelijkingen die zo te zien zijn, zijn continue fouriertransformaties. Dit zijn de echte, of basis. Continu wil zeggen dat we rekenen met functies of ononderbroken lijnen zoals in Fig. \ref{fig:fx}.
+De vergelijkingen die zo te zien zijn, zijn continue fouriertransformaties. Continu wil zeggen dat we rekenen met functies of ononderbroken lijnen zoals in Fig. \ref{fig:fx}.
 
 \begin{figure}
 \centering
@@ -914,9 +914,9 @@ Deze vergelijking hebben we eerder gezien. $\Re$ is het reële deel en $\Im$ het
 \subsection{Discrete fouriertransformatie}
 Nu we iets weten over de echte wiskundigheid achter de fouriertransformatie, moeten we een manier vinden om het toe te passen. Denk terug aan toen we een signaal gingen transformeren in de vorige sectie. We hebben zojuist gelezen dat een signaal continu moet zijn om het te kunnen transformeren. Helaas. Wees niet getreurd, want wiskundigen hebben hier een oplossing voor bedacht: de discrete fouriertransformatie (DFT).
 
-De DFT is equivalent aan de continue FT. Het verschil is dat de DFT alleen bedoeld is voor gesamplede (bemonsterde) signalen. Integendeel tot de continue behandeld de DFT-data alsof het periodisch is en is dus geschikt voor een eindig aantal samples.
+De DFT is equivalent aan de continue FT. Het verschil is dat de DFT alleen bedoeld is voor gesampelde (bemonsterde) signalen. Integendeel tot de continue behandeld de DFT-data alsof het periodisch is en is dus geschikt voor een eindig aantal samples.
 
-Gegeven zijn $N$ (een geheel aantal) metingen van $f(x)$. De metingen zijn verricht in gefixeerde intervallen. Er zijn dan vergelijkingen die Vgl. \ref{eq:cf} en \ref{eq:icf}.
+Gegeven zijn $N$ (een geheel aantal) metingen van $f(x)$. De metingen zijn verricht in gefixeerde intervallen. Er zijn dan vergelijkingen die Def. \ref{eq:cf} en \ref{eq:icf}.
 \begin{definition}[Discrete fouriertransformatie] \label{eq:dft}
 De discrete fouriertransformatie wordt gegeven door
 \begin{align}
@@ -933,7 +933,7 @@ voor $x=\{0, 1, 2, \ldots, N-1\}$.
 \end{definition}
 
 
-Vgl. \ref{eq:dft} en \ref{eq:idft} heten respectievelijk de DFT en de IDFT. Omdat de operatie data behandeld alsof het periodisch is, gebruiken we de fundamentele frequentie en zijn harmonische frequenties. Het gemiddelde van alle frequenties ligt op $\xi=0$. Merk op dat de integraal is vervangen voor het sommatieteken\footnote{Lees meer over dit teken in \cite{som}}.
+Vgl. \ref{eq:dft} en \ref{eq:idft} heten respectievelijk de DFT en de IDFT. Omdat de operatie data behandelt alsof het periodisch is, gebruiken we de fundamentele frequentie en zijn harmonische frequenties. Het gemiddelde van alle frequenties ligt op $\xi=0$. Merk op dat de integraal is vervangen door het sommatieteken\footnote{Lees meer over dit teken in \cite{som}}.
 
 De berekening in $\Sigma$ is
 \begin{displaymath}
@@ -986,7 +986,7 @@ In Fig. \ref{fig:fx2} staat de grafiek samen met zijn onderdelen geplot.
 \label{fig:fx2}
 \end{figure}
 
-Laten we $f(x)$ vier maal per seconde samplen ($f_s=4$) van $t=0$ tot $t=3/4$. De waarden van de discrete samples zijn gegeven door
+Laten we $f(x)$ vier maal per seconde sampelen ($f_s=4$) van $t=0$ tot $t=3/4$. De waarden van de discrete samples zijn gegeven door
 \begin{displaymath}
 f(k)=6+4\cos{\left(\frac{1}{4}\pi k -\frac{1}{2}\pi\right)}+3\cos{\left(\frac{3}{4}\pi k\right)}\qquad\text{met}\qquad t=kT_s=\frac{k}{4}.
 \end{displaymath}
@@ -1023,7 +1023,7 @@ Ziezo, daar heb je het. We hebben nu de functie $f(x)$ met het tijddomein verand
 
 Natuurlijk had het veel nauwkeuriger gekund. Als we naar het signaal $f(x)$ kijken, zien we dat het een periode heeft van 2. Ook zien we verschillende pieken op verschillende momenten binnen zo’n periode. Je zou dus zeggen dat vier monsters nemen van $t=0$ tot $t=3/4$ minder nauwkeurig is dan op iedere kwart van $t$. In dit geval hadden we veel meer data gehad en meer pieken kunnen zien in het frequentiedomein. Zo had de analyse van dit signaal nog preciezer gegaan kunnen zijn.
 
-We weten nu niet alleen wat er gebeurt als we een FT zien, we kunnen hem nu ook berekenen d.m.v. de DFT. Natuurlijk kan je m.b.v. de IDFT weer terug naar het tijddomein. Omdat deze berekening zo goed als op dezelfde wijze gaat, laten we deze hier niet zien. Als men deze IDFT toepast dan krijgt men niet exact hetzelfde signaal als die we eerst hadden, maar een fourierreeks daarvan. Zoals eerder gezegd  betekend dat, dat het signaal wordt benaderd door een stapel cosinussen en sinussen. Oftewel: de IDFT van $f(\xi)$ geeft een fourierreeks voor $f(x)$.
+We weten nu niet alleen wat er gebeurt als we een FT zien, we kunnen hem nu ook berekenen d.m.v. de DFT. Natuurlijk kan je m.b.v. de IDFT weer terug naar het tijddomein. Omdat deze berekening zo goed als op dezelfde wijze gaat, laten we deze hier niet zien. Als men deze IDFT toepast dan krijgt men niet exact hetzelfde signaal als die we eerst hadden, maar een fourierreeks daarvan. Zoals eerder gezegd  betekent dat, dat het signaal wordt benaderd door een stapel cosinussen en sinussen. Oftewel: de IDFT van $f(\xi)$ geeft een fourierreeks voor $f(x)$.
 
 \section{Praktische toepassingen}
 Allemaal leuk en aardig, zo’n fouriertransformatie, maar uiteindelijk moet men er toch iets mee kunnen. Voor de mensen die de wiskunde alleen maar saai, moeilijk of vervelend vinden, is er ook hoop. De FT is er niet voor niets en daarom bespreken we ook nog de toepassingen van de fouriertransformatie. Om tot die toepassingen te komen, moeten we het ook heel even over de Fast Fourier Transform hebben.
@@ -1037,11 +1037,11 @@ Vroeger, toen wiskunde in het bedrijfsleven nog veel met de hand gedaan werd, wa
 	\label{fig:tukey}
 \end{figure}
 
-Tukey kwam op het idee toen hij een meeting had van president Kennedy’s Science Advisory Committee waar een discussie gaande was over het detecteren van nucleaire tests van de Sovjet-Unie. Slimmerds hadden bedacht dat dit wel met sensoren kon. Ze zaten niet fout, want Tukey kwam al snel met een het computeralgoritme om het uitgaande signaal om te zetten naar een analyseerbaar signaal. Mooi!
+Tukey kwam op het idee toen hij een meeting had van president Kennedy’s Science Advisory Committee waar een discussie gaande was over het detecteren van nucleaire tests van de Sovjet-Unie. Slimmerds hadden bedacht dat dit wel met sensoren kon. Ze zaten niet fout, want Tukey kwam al snel met een computeralgoritme om het uitgaande signaal om te zetten naar een analyseerbaar signaal. Mooi!
 
 Richard Garwin was wel geïnteresseerd in Tukey’s trucje en vroeg naar details. Hij heeft het algoritme gebruikt voor van alles wat hem interesseerde. O.a. de periodiciteit van de spinoriëntaties in een 3D kristal van Helium-3. Garwin gaf Tukey’s ideeën aan Cooley die samen met Garwin bij IBM (een groot computerbedrijf) werkten. Cooley implementeerde het in nog een aantal andere dingen. Cooley en Tukey publiceerden zes maanden na de uitvinding een paper en omdat Tukey niet voor IBM werkte was het niet eerlijk om het patent aan IBM te geven. Daarom ging het algoritme in het publieke domein. Dat wil zeggen dat iedereen op de wereld het algoritme mag gebruiken zoals gewenst. Dit was bijzonder mooi voor de computerrevolutie. De FFT was voornamelijk het belangrijkste algoritme in de signaalanalyse.
 
-In 2012 is een nieuwe grote verbetering op de FFT bedacht. Een stelletje MIT-onderzoekers hebben de Sparse Fourier Transform (SFT) uitgevonden. Met de SFT kan data tien tot honderd keer sneller data worden verwerkt.
+In 2012 is een nieuwe grote verbetering op de FFT bedacht. Een stelletje MIT-onderzoekers hebben de Sparse Fourier Transform (SFT) uitgevonden. Met de SFT kan data tien tot honderd keer sneller worden verwerkt.
 
 Nu we wat over deze geschiedenis weten, laten we naar verschillende gebruiken hiervan kijken.
 
@@ -1061,9 +1061,9 @@ Filtering is ook een belangrijke toepassing. Het lijkt op het comprimeren, maar 
 \end{figure}
 
 \subsection{Astronomie}
-Soms stuit men op een probleem. Problemen zijn er om opgelost te worden. Zo wilde NASA, een ruimtevaartorganisatie, de planeet Venus bekijken \cite{jg}. Venus staat relatief dichtbij aarde en zou daarom makkelijk met de telescoop te zien zijn. Helaas bleek dit niet zo te zijn, omdat het oppervlak zo goed als volledig bedekt is met wolken. Een telescoop kan niet door wolken heen prikken, dus moest er een andere manier verzonnen worden om Venus te kunnen bekijken.
+Soms stuit men op een probleem. Problemen zijn er om opgelost te worden. Zo wilde NASA, een ruimtevaartorganisatie, de planeet Venus bekijken \cite{jg}. Venus staat relatief dichtbij Aarde en zou daarom makkelijk met de telescoop te zien moeten zijn. Helaas bleek dit niet zo te zijn, omdat het oppervlak zo goed als volledig bedekt is met wolken. Een telescoop kan niet door wolken heen prikken, dus moest er een andere manier verzonnen worden om Venus te kunnen bekijken.
 
-NASA lanceert een satelliet, genaamd Magellan. Het is uitgerust met een radar en geavanceerde digitale signaalverwerkingssoftware. De satelliet is erop gemaakt om door wolken heen te kunnen 'kijken'. De missie van Magellan was om Venus op de kaart te zetten. De plaatjes die Magellan terugstuurde naar de aarde waren plaatjes als Fig. \ref{fig:venus}.
+NASA lanceert een satelliet, genaamd Magellan. Deze is uitgerust met een radar en geavanceerde digitale signaalverwerkingssoftware. De satelliet is erop gemaakt om door wolken heen te kunnen 'kijken'. De missie van Magellan was om Venus op de kaart te zetten. De plaatjes die Magellan terugstuurde naar de aarde waren plaatjes als Fig. \ref{fig:venus}.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=.6]{venus}
@@ -1071,7 +1071,7 @@ NASA lanceert een satelliet, genaamd Magellan. Het is uitgerust met een radar en
 	\label{fig:venus}
 \end{figure}
 
-Dit is een gedeelte van Venus. 20km breed. De zwarte strepen zijn enkel foutjes bij het maken van de afbeelding. De satelliet heeft veel meer kunnen doen dan verwacht. Het heeft 99\% van de totale oppervlakte van Venus in kaart gebracht. Van deze kaart en informatie van nog andere satellieten en ruimtevaartuigen, kon Fig. \ref{fig:venus2} worden gemaakt.
+Dit is een gedeelte van Venus. 20km breed. De zwarte strepen zijn enkel foutjes bij het maken van de afbeelding. De satelliet heeft veel meer kunnen doen dan verwacht. Hij heeft 99\% van de totale oppervlakte van Venus in kaart gebracht. Van deze kaart en informatie van nog andere satellieten en ruimtevaartuigen, kon Fig. \ref{fig:venus2} worden gemaakt.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=.6]{venus2}
@@ -1079,7 +1079,7 @@ Dit is een gedeelte van Venus. 20km breed. De zwarte strepen zijn enkel foutjes 
 	\label{fig:venus2}
 \end{figure}
 
-Magellan had ook een kleine antenne die recht naar de oppervlakte wees. Deze mat de exacte tijd van hoelang het signaal erover deed om terug te komen bij de satelliet. Deze data en de eerdere kaarten hebben voor een spetterende animatie gezorgd die te downloaden is via \cite{jg}. Deze hele missie was zonder Fourier waarschijnlijk nooit zo succesvol geweest.
+Magellan had ook een kleine antenne die recht naar de oppervlakte wees. Deze meette de exacte tijd van hoelang het signaal erover deed om terug te komen bij de satelliet. Deze data en de eerdere kaarten hebben voor een spetterende animatie gezorgd die te downloaden is via \cite{jg}. Deze hele missie was zonder Fourier waarschijnlijk nooit zo succesvol geweest.
 
 \subsection{Er is nog veel meer...}
 Het blijft niet alleen bij geluid, afbeeldingen en astronomie. Er zijn veel meer toepassingen te bedenken voor deze transformatie. Hier volgt een opsomming van verschillende toepassingen en toepassingsgebieden. Klinkt iets interessant? Zoek het dan op!
@@ -1090,7 +1090,7 @@ De fouriertransformatie wordt ook toegepast op, maar is niet gelimiteerd aan: on
 %----------------------------------------------------------------------------------------
 
 \chapter{Kwantum superpositie van elementaire deeltjes}
-In dit hoofdstuk gaan we kijken naar de toepassing van het complex getal in de vergelijking van Schrödinger. Maar voor we de vergelijking zelf gaan bekijken gaan we eerst naar het idee van de vergelijking kijken om zo hopelijk met een beter begrip naar de vergelijking te kijken. Of dit gaat lukken is de vraag want de vergelijking van Schrödinger is een complex stukje wiskunde wat in het middelpunt staat van een zeer complexe tak van de natuurkunde, namelijk de kwantummechanica. Kwantummechanica is een nog jong en snelgroeiend onderdeel van de natuurkunde, waar natuurkundigen als Einstein en Schrödinger een grote bijdrage aan hebben geleverd. Desondanks zijn we nog ver weg van een goed begrip van kwantummechanica, omdat het vaak niet te beschrijven is in termen die we herkennen uit de klassieke natuurkunde of ons dagelijks leven. Maar voor we hieraan beginnen gaan we eerst wat achtergrond schetsen van de situatie.
+In dit hoofdstuk gaan we kijken naar de toepassing van het complex getal in de vergelijking van Schrödinger. Maar voor we de vergelijking zelf gaan bekijken gaan we eerst naar stof achter de vergelijking kijken om zo een beter begrip van de vergelijking te krijgen. Of dit gaat lukken is de vraag want de vergelijking van Schrödinger is een complex stukje wiskunde wat in het middelpunt staat van een zeer complexe tak van de natuurkunde, namelijk de kwantummechanica. Kwantummechanica is een nog jong en snelgroeiend onderdeel van de natuurkunde, waar natuurkundigen als Einstein en Schrödinger een grote bijdrage aan hebben geleverd. Desondanks zijn we nog ver weg van een goed begrip van kwantummechanica, omdat het vaak niet te beschrijven is in termen die we herkennen uit de klassieke natuurkunde of ons dagelijks leven. Maar voor we hieraan beginnen gaan we eerst wat achtergrond schetsen van de situatie.
 
 \section{Wie was Erwin Schrödinger?}
 Erwin Rudolf Josef Alexander Schrödinger was geboren op 12 augustus 1887 in Wenen in het toenmalige Oostenrijk-Hongarije (tegenwoordig Oostenrijk). Zijn ouders waren Rudolf Schrödinger, een botanist, en Georgine Emilia Brenda Schrödinger, een scheikundeprofessor bij Technische Hochschule Vienna. Schrödinger was enig kind. Ondanks te zijn opgegroeid in een religieus gezin was Schrödinger zelf een atheïst, al had hij wel interesse voor oosterse religies.
@@ -1100,11 +1100,11 @@ Erwin Rudolf Josef Alexander Schrödinger was geboren op 12 augustus 1887 in Wen
 	\label{fig:erwin}
 \end{figure}
 Schrödinger studeerde van 1906 tot 1910 onder Frans S. Exner en Friedrich Hasenöhrl en is in 1911 een assistent van Exner geworden. In 1914 begon Schrödinger het proces om zelf professor te worden, wat hij in 1921 afrondde. Op 6 april 1920 trouwde Erwin Schrödinger met de 23-jarige Annemarie Bertel. In 1921 is hij verhuisd naar Zürich waar hij ging werken bij de Universiteit van Zürich. 
-Schrödinger publiceerde in januari 1926 het artikel "Quantisierung als Eigenwertproblem" in het wetenschappelijke blad "Annalen de Physik". Hierin maakte hij de golffunctie, die nu bekend staat als de Schrödingervergelijking, bekend. In de hierop volgende maanden publiceerde hij nog enkele artikelen die verschillende problemen en toevoegingen voor de golffunctie gaven. Deze artikelen waren revolutionair voor de kwantummechanica en zijn vierde artikel was waarschijnlijk de reden dat de kwantummechanica complexe getallen ging gebruiken in plaats van reële getallen.
+Schrödinger publiceerde in januari 1926 het artikel "Quantisierung als Eigenwertproblem" -wetenschappelijke blad "Annalen de Physik". Hierin maakte hij de golffunctie, die nu bekend staat als de Schrödingervergelijking, bekend. In de hierop volgende maanden publiceerde hij nog enkele artikelen die verschillende problemen en toevoegingen voor de golffunctie gaven. Deze artikelen waren revolutionair voor de kwantummechanica en zijn vierde artikel was waarschijnlijk de reden dat de kwantummechanica complexe getallen ging gebruiken in plaats van reële getallen.
 
-In 1927 volgde hij Max Planck op bij de Universiteit van Berlijn. Hier werkt hij tot 1934, toen verliet hij Duitsland vanwege het opkomende antisemitisme van de Nazi's. Schrödinger is toen aan het werk gegaan bij de Universiteit van Oxford. Niet lang nadat hij was gaan werken in Oxford ontving hij een Nobelprijs samen met Paul Dirac voor zijn werk over de atoomtheorie: het idee dat materie bestaat uit een vast te stellen aantal atomen. Vanwege Schrödingers ongewone thuissituatie, hij woonde samen met zijn vrouw en zijn minnares, had hij problemen met verdere carrière maken in het Verenigd Koninkrijk. Uiteindelijk is hij in 1936 bij de Universiteit van Graz in Oostenrijk aan de slag gegaan. Gedurende deze periode had Schrödinger ook een brievenwisseling met Albert Einstein, waarin hij zijn bekende denkexperiment "Schrödingers kat" beschreef, waarmee hij de Kopenhagen-interpretatie van de kwantummechanica (dit wordt later verder besproken) in twijfel trok.
+In 1927 volgde hij Max Planck op bij de Universiteit van Berlijn. Hier werkte hij tot 1934, toen verliet hij Duitsland vanwege het opkomende antisemitisme van de Nazi's. Schrödinger is toen aan het werk gegaan bij de Universiteit van Oxford. Niet lang nadat hij was gaan werken in Oxford ontving hij een Nobelprijs samen met Paul Dirac voor zijn werk over de atoomtheorie: het idee dat materie bestaat uit een vast te stellen aantal atomen. Vanwege Schrödingers ongewone thuissituatie, hij woonde samen met zijn vrouw en zijn minnares, had hij problemen met verdere carrière maken in het Verenigd Koninkrijk. Uiteindelijk is hij in 1936 bij de Universiteit van Graz in Oostenrijk aan de slag gegaan. Gedurende deze periode had Schrödinger ook een briefwisseling met Albert Einstein, waarin hij zijn bekende denkexperiment "Schrödingers kat" beschreef, waarmee hij de Kopenhagen-interpretatie van de kwantummechanica (dit wordt later verder besproken) in twijfel trok.
 
-Toen in 1938 Oostenrijk werd opgenomen in Nazi-Duistland kwam Schrödinger in de problemen. Hij was Duitsland ontvlucht in 1933 en was een bekend tegenstander van het Nazisme. Hij probeerde zijn eerdere uitingen tegen de Nazi’s nog terug te nemen, waar hij later spijt van had, om zijn positie bij de Universiteit van Graz te behouden, maar dit was niet genoeg. Schrödinger werd ontslagen en vluchtte uiteindelijk naar Italië. Datzelfde jaar werd hij door de premier van Ierland gevraagd om te helpen met het opzetten van het Instituut voor Geavanceerde Wetenschappen in Dublin. Schrödinger verhuisde dus naar Dublin en werd in 1940 directeur van de School voor Theoretische Fysica. Gedurende zijn tijd in Dublin schreef Schrödinger zo’n 50 wetenschappelijke artikelen die verschillende wetenschappers inspireerden tot grootste ontdekkingen. Zo inspireerde Schrödingers artikel "What is Life?" James D. Watson en Francis Crick tot het onderzoeken van de functie en bouw van het DNA, wat leidde tot belangrijke doorbraken in de biologie.
+Toen in 1938 Oostenrijk werd opgenomen in Nazi-Duistland kwam Schrödinger in de problemen. Hij was Duitsland ontvlucht in 1933 en was een bekend tegenstander van het Nazisme. Hij probeerde zijn eerdere uitingen tegen de Nazi’s nog terug te nemen, waar hij later spijt van had, om zijn positie bij de Universiteit van Graz te behouden, maar dit was niet genoeg. Schrödinger werd ontslagen en vluchtte uiteindelijk naar Italië. Datzelfde jaar werd hij door de premier van Ierland gevraagd om te helpen met het opzetten van het Instituut voor Geavanceerde Wetenschappen in Dublin. Schrödinger verhuisde dus naar Dublin en werd in 1940 directeur van de School voor Theoretische Fysica. Gedurende zijn tijd in Dublin schreef Schrödinger zo’n 50 wetenschappelijke artikelen die verschillende wetenschappers inspireerden tot grootse ontdekkingen. Zo inspireerde Schrödingers artikel "What is Life?" James D. Watson en Francis Crick tot het onderzoeken van de functie en bouw van het DNA, wat leidde tot belangrijke doorbraken in de biologie.
 In 1956 is Schrödinger teruggegaan naar Wenen. Hier leefde hij tot zijn overlijden op 4 januari in 1961. Erwin Rudolf Josef Alexander Schrödinger, de vader van de kwantummechanica, is 73 jaar oud geworden\cite{schr}.
 
 \section{De interpretatie van de kwantummechanica}
@@ -1756,6 +1756,14 @@ Door het toevoegen van de complexe getallen krijgen fractals veel meer mogelijkh
 \section*{Conclusie}
 \addcontentsline{toc}{subsection}{Conclusie}
 \printbibliography[heading=bibempty,keyword=conc]
+
+\section*{Algemene conclusie}
+\addcontentsline{toc}{subsection}{Algemene conclusie}
+Complexe getallen zijn bijzondere getallen die zo'n beetje overal toegepast kunnen worden. Als het nog niet bedacht is, dan kan dat zelfs nog komen. We hebben verschillende toepassingen bekeken in dit onderzoek. Het gebruik van complexe getallen in deze toepassingen was verschillend. Bij de ene was het om een formule te vereenvoudigen, de andere zorgt ervoor dat iets onmogelijks ineens mogelijk wordt.
+We kunnen zeker stellen dat complexe getallen vooral toegepast worden in formules. Denk aan waarschijnlijkheidsformules zoals de schrödingervergelijking; transformaties zoals de fouriertransformatie; functies zoals fractals. Bij de ene vergelijking is het om iets anders onmogelijks te doen, bij het andere is het om een vergelijking te versimpelen.
+Het is ook zo dat complexe getallen voor meer mogelijkheden binnen de wiskunde zorgen. Te beginnen bij simpele vergelijkingen die met reële getallen niet op te lossen zijn. Natuurlijk blijft dit niet bij simpele formules, maar is nu ook ineens de schrödingervergelijking mogelijk. Ook kunnen er nu meer fractals gemaakt worden.
+
+Nu we dat gezegd hebben, kunnen we ook zeggen dat niet iedere toepassing van complexe getallen hetzelfde is. Niet bij iedere toepassing worden complexe getallen voor hetzelfde doeleinde gebruikt. Het is wel zeker zo dat deze extra getallenverzameling extra dingen mogelijk maakt. Fascinerend.
 
 %----------------------------------------------------------------------------------------
 %	INDEX
