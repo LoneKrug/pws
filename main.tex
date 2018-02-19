@@ -112,8 +112,8 @@ Wij kregen te horen dat we bij wiskunde waren ingedeeld. Het was even een omscha
 \section{Hoofdvraag}
 Wat is de relatie tussen de verschillende toepassingen van complexe getallen? 
 
-\section{Hypothese}
-De relatie tussen de verschillende toepassingen van omplexe getallen is: complexe getallen worden gebruikt om gegevens die niet direct te meten of voorspellen zijn te berekenen.
+\section{Hypothese}\label{sec:hypo}
+De relatie tussen de verschillende toepassingen van complexe getallen is: complexe getallen worden gebruikt om gegevens die niet direct te meten of te voorspellen zijn te berekenen.
 
 \section{Deelvragen}
 Voor de hoofdvraag waren er natuurlijk deelvragen nodig die het complexe getal specifiek uitleggen maar ook op welke gebieden het complexe getal wordt gebruikt en wat nou de relatie tussen die gebieden zijn. Wij zijn tot de volgende deelvragen gekomen.
@@ -888,7 +888,7 @@ Naar de rekentafel. Laat $f(x)$ een functie zijn van een reële variabele $x$. D
 \begin{definition}[Continue fouriertransformatie]\label{eq:cf}
 De continue fouriertransformatie wordt gegeven door
 \begin{align}
-\hat{f}(\xi)=\int_{-\infty}^\infty f(x)e^{i2\pi \xi x} \, dx
+\hat{f}(\xi)=\int_{-\infty}^\infty f(x)e^{-i2\pi \xi x} \, dx
 \end{align}
 \end{definition}
 
@@ -1121,13 +1121,13 @@ Toen wetenschappers licht op een stukje metaal lieten schijnen merkten ze iets o
 Om dit probleem op te lossen kwam Albert Einstein met het idee om licht te zien als kleine deeltjes die hij fotonen noemde. Bij het experiment zijn het dan de fotonen die tegen de elektronen aanbotsen en zo hun energie overdragen. De fotonen hebben dan een kinetische energie die groter wordt bij een toenemende frequentie, Fig. \ref{fig:fee}. Dus hoe groter de frequentie van het licht, hoe harder de elektronen wegschieten. Dit is een belangrijk voorbeeld van een golf die zich als een deeltje kan gedragen \cite{fee}.
 
 \subsection{Dubbele spleet experiment}
-De realisatie dat een deeltje zich ook als golf kan voortbewegen ontstond met het dubbele spleet experiment. Hierbij werden elektronen op een plaat waar twee spleten in zitten afgeschoten. Achter de plaat werd de plaats waar de elektronen die door spleten heen waren gekomen gedetecteerd. Wat je verwacht als je een elektron, wat wordt gezien als deeltje, gebruikt in dit experiment, is dat er twee plekken worden gedetecteerd waar elektronen neerkomen die elk direct achter een spleet liggen, Fig. \ref{fig:vds}.
+De realisatie dat een deeltje zich ook als golf kan voortbewegen ontstond met het dubbele spleet experiment. Hierbij werden elektronen op een plaat waar twee spleten in zitten afgeschoten. Achter de plaat werd de plaats waar de elektronen die door spleten heen waren gekomen gedetecteerd. Wat je verwacht als je een elektron, dat wordt gezien als deeltje, gebruikt in dit experiment, is dat er twee plekken worden gedetecteerd waar elektronen neerkomen die elk direct achter een spleet liggen, Fig. \ref{fig:vds}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{vds}
 	\caption{Verwachte resultaat dubbele spleet experiment.}
 	\label{fig:vds}
 \end{figure}
-Wat echter werd waargenomen was een interferentiepatroon, Fig. \ref{fig:wds} en \ref{fig:ipat}, iets wat normaal gesproken wordt waargenomen bij golven. Bij een interferentiepatroon heb je afwisselend donkere en lichte lijnen. De donkere lijnen geven aan waar twee positieve of twee negatieve toppen van twee verschillende golven elkaar kruisen en zo elkaar versterken en de lichte lijnen geven aan waar een positieve en een negatieve top van twee verschillen de golven elkaar kruisen en zo elkaar op heffen.
+Wat echter werd waargenomen was een interferentiepatroon, Fig. \ref{fig:wds} en \ref{fig:ipat}, iets wat normaal gesproken wordt waargenomen bij golven. Bij een interferentiepatroon heb je afwisselend donkere en lichte lijnen. De donkere lijnen geven aan waar twee positieve of twee negatieve toppen van twee verschillende golven elkaar kruisen en zo elkaar versterken en de lichte lijnen geven aan waar een positieve en een negatieve top van twee verschillende golven elkaar kruisen en zo elkaar opheffen.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{wds}
 	\caption{Waargenomen resultaat dubbele spleet experiment.}
@@ -1141,15 +1141,16 @@ Wat echter werd waargenomen was een interferentiepatroon, Fig. \ref{fig:wds} en 
 Bij elektronen zijn de lichte lijnen plekken waar geen elektronen zijn waargenomen en zijn de donkere lijnen plekken waar veel elektronen zijn waargenomen. Het feit dat zo’n patroon wordt waargenomen bij elektronen geeft aan dat elektronen zich soms als golven kunnen gedragen.
 
 \subsection{Superpositie}
-We hebben nu voorbeelden gezien waar golven zich als deeltjes kunnen gedragen en waar deeltjes zich als golven kunnen gedragen. Of iets zich als golf of als deeltje gaat gedragen kun je niet van tevoren weten, je ziet pas of iets een deeltje of een golf is als je het hebt gemeten. Zolang je het deeltje niet hebt gemeten zou het beiden kunnen worden en als je een systeem hebt met meerdere van dit soort deeltjes kun je niet van tevoren weten wat voor eigenschappen dat systeem gaat hebben. Wat in feite wordt gezegd is dat je niet weet wat iets is voordat je het hebt gezien. Wel is belangrijk om te melden dat het bij dit soort theorieën om de kleinste deeltjes gaat en niet om bijvoorbeeld een keukentafel. 
+We hebben nu voorbeelden gezien waar golven zich als deeltjes kunnen gedragen en waar deeltjes zich als golven kunnen gedragen. Of iets zich als golf of als deeltje gaat gedragen kun je niet van tevoren weten, je ziet pas of iets een deeltje of een golf is als je het hebt gemeten. Zolang je het deeltje niet hebt gemeten zou het beide kunnen worden en als je een systeem hebt met meerdere van dit soort deeltjes kun je niet van tevoren weten wat voor eigenschappen dat systeem gaat hebben. Wat in feite wordt gezegd is dat je niet weet wat iets is voordat je het hebt gezien. Wel is belangrijk om te melden dat het bij dit soort theorieën om de kleinste deeltjes gaat en niet om bijvoorbeeld een keukentafel. 
 
-Zo'n nog niet gemeten deeltje kan dus van alles worden en zolang je het niet hebt gemeten is het als het ware alle mogelijke staten tegelijk. Omdat een deeltje of een golf ook nog beweegt, kan het zich mogelijk ook op andere plekken tegelijkertijd bevinden, want een deeltje beweegt zich weer anders voort dan een golf. Zo kan een deeltje, zolang hij niet gemeten is, zowel een golf als een deeltje zijn, op twee plekken tegelijkertijd zijn en wel of niet aangeslagen zijn. Als dit het geval is, is het deeltje in een superpositie. Het deeltje is dan alle mogelijke staten tegelijk en heeft het dus geen vaste eigenschappen.
+Zo'n nog niet gemeten deeltje kan dus van alles worden en zolang je het niet hebt gemeten is het als het ware alle mogelijke staten tegelijk. Omdat een deeltje of een golf ook nog beweegt, kan het zich mogelijk ook op andere plekken tegelijkertijd bevinden, want een deeltje beweegt zich weer anders voort dan een golf. Zo kan een deeltje, zolang het niet gemeten is, zowel een golf als een deeltje zijn, op twee plekken tegelijkertijd zijn en wel of niet aangeslagen zijn. Als dit het geval is, is het deeltje in een superpositie. Het deeltje is dan alle mogelijke staten tegelijk en heeft het dus geen vaste eigenschappen.
 
 Zodra het deeltje wordt gemeten "kiest" het deeltje willekeurig één van de mogelijke staten en heeft hij op dat moment dus vast te stellen eigenschappen. Maar zodra de meting klaar is, is het zeker weer mogelijk dat het deeltje weer in een superpositie raakt. Hierdoor zijn metingen van zulke systemen die zich mogelijk in een superpositie bevinden niet consistent, omdat een deeltje bij iedere meting een andere staat om in terug te vallen kan "kiezen" \cite{kopenhagen}\cite{superposition}.
 
 \subsection{Schrödingers kat}
-Een bekend gedachte-experiment wat het probleem van kwantummechanica en superposities probeert uit te leggen is Schrödingers kat. Hier wordt een kat opgesloten in een kist. In die kist bevindt zich een Geigerteller, een flesje vergif en een minuscuul radioactief deeltje, zo klein dat het binnen een uur kan vervallen maar ook helemaal niet. Als het radioactieve deeltje vervalt wordt dit gemeten door de Geigerteller, komt het vergif vrij en sterft de kat, zo niet dan leeft de kat nog. Dit radioactieve deeltje is in dit geval het deeltje wat zich in een superpositie bevindt en omdat de hele kist afhankelijk is van dit deeltje kun je zeggen dat de hele kist zich in een superpositie bevindt. Zolang je de kist niet opent weet je niet of het deeltje wel of niet is vervallen en weet je dus niet of de kat nog leeft. Zodra je de kist opent en de inhoud waarneemt kun je bepalen of de kat leeft of niet. In welke staat de superpositie terugvalt, een dode of een levende kat, als je de kist opent is willekeurig.
-Het is dus onmogelijk om precies te bepalen wat of waar een deeltje in een superpositie is. Maar ondertussen is het natuurkundigen gelukt om een formule op te zetten die meest waarschijnlijke staat waarin een deeltje zal terugvallen te berekenen of eigenlijk te voorspellen. Deze voorspellende formule is de Schrödingervergelijking \cite{schrcat}.
+Een bekend gedachte-experiment wat het probleem van kwantummechanica en superposities probeert uit te leggen is Schrödingers kat. Hier wordt een kat opgesloten in een kist. In die kist bevinden zich een Geigerteller, een flesje vergif en een minuscuul radioactief deeltje, zo klein dat het binnen een uur kan vervallen maar ook helemaal niet. Als het radioactieve deeltje vervalt wordt dit gemeten door de Geigerteller, komt het vergif vrij en sterft de kat, zo niet dan leeft de kat nog. Dit radioactieve deeltje is in dit geval het deeltje dat zich in een superpositie bevindt en omdat de hele kist afhankelijk is van dit deeltje kun je zeggen dat de hele kist zich in een superpositie bevindt. Zolang je de kist niet opent weet je niet of het deeltje wel of niet is vervallen en weet je dus niet of de kat nog leeft. Zodra je de kist opent en de inhoud waarneemt kun je bepalen of de kat leeft of niet. In welke staat de superpositie terugvalt, een dode of een levende kat, als je de kist opent is willekeurig.
+
+Het is dus onmogelijk om precies te bepalen wat of waar een deeltje in een superpositie is. Maar ondertussen is het natuurkundigen gelukt om een formule op te zetten die de meest waarschijnlijke staat waarin een deeltje zal terugvallen kan berekenen of eigenlijk kan voorspellen. Deze voorspellende formule is de Schrödingervergelijking \cite{schrcat}.
 
 \section{Schrödingervergelijking: de theorie}
 De Schrödingervergelijking is de basis van de kwantummechanica en in feite een kansberekening. De functie van de Schrödingervergelijking is om veranderingen over tijd van een fysiek systeem te berekenen en te voorspellen. Oftewel, met de Schrödingervergelijking kun je bepalen waar je een deeltje op een bepaald tijdstip kunt vinden. In de formule zitten delen waarmee je de positie ten opzichte van de $x$-as, $y$-as en $z$-as (driedimensionaal) kunt voorspellen en samen met gegevens als tijd, massa en lading van een deeltje kun je daarna ook bepalen waar het deeltje verder heen zal gaan.
@@ -1171,7 +1172,7 @@ Natuurkundige Max Born kwam erachter dat je op de punten waar een piek of dal te
 \end{figure}
 Dit wil niet zeggen dat je op punten 1, 2 of 3 (Fig. \ref{fig:fx6}) geheid een deeltje zult vinden, want je kunt ook deeltjes tegen komen op punten a, b of c. Maar als je heel vaak een deeltje door de proefopstelling laat gaan zal je zien dat de meeste deeltjes in de buurt van punten 1, 2 en 3 worden waargenomen. De kans dat het deeltje in de buurt van 1, 2 of 3 belandt is groot, maar kans dat het deeltje op een compleet andere plek belandt is er dus nog wel. In het geval van Fig. \ref{fig:fx6} zullen de meeste deeltjes dus rond punt 3 worden waargenomen, maar er zullen ook een hoop wordt aangetroffen rond punt 2, verder zal je ook nog een aanzienlijk aantal rond punt 1 zien en de rest van losgelaten deeltjes zal verspreid zijn over de rest van de grafiek.
 
-Als je dan op deze situaties de andere dimensies toepast en kijkt naar het tijdsverloop kunt je dus bepalen wat de meest waarschijnlijke positie van een deeltje is op het meest waarschijnlijke tijdstip en zo kun verder ook bepalen wat de meest waarschijnlijke baan van dat deeltje wordt, maar het is dus nog wel mogelijk dat het deeltje in de werkelijkheid de compleet andere kant opgaat \cite{wavefunction}\cite{whatsitmean}\cite{whatsit}.
+Als je dan op deze situaties de andere dimensies toepast en kijkt naar het tijdsverloop kunt je dus bepalen wat de meest waarschijnlijke positie van een deeltje is op het meest waarschijnlijke tijdstip en zo kun verder ook bepalen wat de meest waarschijnlijke baan van dat deeltje wordt, maar het is dus nog wel mogelijk dat het deeltje in werkelijkheid de compleet andere kant opgaat \cite{wavefunction}\cite{whatsitmean}\cite{whatsit}.
 
 \section{Schrödingervergelijking: de formule}
 We gaan hier kijken naar de vergelijking zelf en onderdelen van de vergelijking uit elkaar pluizen. We gaan echter niet kijken hoe Schrödinger op de vergelijking is gekomen, omdat dat een lang en veel te moeilijk verhaal gaat worden wat verder niet veel toepassing heeft op ons onderzoek. Zoals eerder als snel genoemd werd zijn er twee versies van de Schrödingervergelijking, de tijdsafhankelijke vergelijking en de tijdsonafhankelijke vergelijking. We gaan eerst naar de tijdsafhankelijke versie kijken.
@@ -1213,7 +1214,7 @@ Al meteen zijn er een hoop onbekende tekens en letters te zien. Dus laten we dez
 \item $m$ = is de massa van een deeltje in kilogram
 \item $\hat{p}$ is de impulsoperator en geeft de relatie tussen de snelheid en de massa van een deeltje in de kwantum mechanica. De impulsoperator wordt berekend als $\hat{p}=-i\hslash\nabla$
 \begin{enumerate}
-\item $\nabla$ is een nabla en is geeft de beweging van een deeltje aan. Als je cartesische coördinaten gebruikt schrijf je het als $\nabla = \frac{\delta}{\delta x}+\frac{\delta}{\delta y}+\frac{\delta}{\delta z}$, maar wordt voor het overzicht $\nabla$
+\item $\nabla$ is een nabla en geeft de beweging van een deeltje aan. Als je cartesische coördinaten gebruikt schrijf je het als $\nabla = \frac{\delta}{\delta x}+\frac{\delta}{\delta y}+\frac{\delta}{\delta z}$, maar wordt voor het overzicht $\nabla$
 \end{enumerate}
 \end{enumerate}
 \end{enumerate}
@@ -1262,7 +1263,7 @@ De uitgewerkte tijdsonafhankelijke Schrödingervergelijking ziet er als volgt ui
 
 Ook al zie je in de uitgewerkte versie geen imaginair getal is dit nog steeds een complexe vergelijking, want in de impulsoperator die in de Hamiltoniaan verwerkt is staat namelijk een imaginair getal. Het moet dus wel een complexe vergelijking zijn want met een reële getallenverzameling zou je op een andere vergelijking uitkomen.
 
-De oplossing voor beide vergelijking is de kansdichtheid. Natuurkundige Max Born kwam erachter dat je deze kansdichtheid kunt berekenen door de absolute waarde van de golffunctie te kwadrateren, dit geeft ${\left|\Psi\right|}^2$. De tijdsonafhankelijke vergelijking wordt ${\left|\Psi\right|}^2=\left|{\psi(r)}^2\right|$. Bij de tijdsafhankelijke vergelijking wordt het het volgende.
+De oplossing voor beide vergelijkingen is de kansdichtheid. Natuurkundige Max Born kwam erachter dat je deze kansdichtheid kunt berekenen door de absolute waarde van de golffunctie te kwadrateren, dit geeft ${\left|\Psi\right|}^2$. De tijdsonafhankelijke vergelijking wordt ${\left|\Psi\right|}^2=\left|{\psi(r)}^2\right|$. Bij de tijdsafhankelijke vergelijking wordt het het volgende.
 \begin{align}\label{eq:psipsi}
 {\left|\Psi(r,\,t)\right|}^2 &=\left|{\psi(r)}^2\cdot e^{-2(2\pi i \frac{E}{h})t}\right|\nonumber\\
 &=\left|{\psi(r)}^2\right|\cdot\left|e^{-2(2\pi i\frac{E}{h})t}\right|\nonumber\\
@@ -1288,7 +1289,7 @@ We gaan nu kijken naar een voorbeeld van de Schrödingervergelijking. Om het sim
 	\caption{Schematische weergave van de doos.}
 	\label{fig:tes}
 \end{figure}
-Voor dit voorbeeld nemen we een deeltje dat in een doos tussen twee ondoordringbare muren stuitert en het deeltje beweegt alleen heen weer langs de $x$-as, zie Fig. \ref{fig:tes}. De ondoordringbare muren staan op $x = 0$ en $x = L$.  Omdat er binnen de doos zijn er geen krachten of andere voorwerpen die het deeltje binnen de doos beïnvloeden is de potentiële energie $V$ op het deeltje binnen de doos is nul. Dus $V(x)=0$ bij $0 < x < L$. Als het deeltje bij de muren komt wordt het deeltje met een oneindig grote kracht de andere kant opgeduwd, want de muren zijn ondoordringbaar en de energie van het deeltje kan dus nooit groot genoeg zijn om door de muren te komen. De potentiële energie op het deeltje is dan oneindig groot wanneer het deeltje tegen de muur aankomt en de andere kant op wordt geduwd. Dus $V(x)=\infty$ bij $x\leq 0$ en $x\geq L$. Nu we dit weten kunnen de Schrödingervergelijking erbij halen en de tijdsonafhankelijke eendimensionale Schrödingervergelijking ziet er als volgt uit.
+Voor dit voorbeeld nemen we een deeltje dat in een doos tussen twee ondoordringbare muren stuitert en het deeltje beweegt alleen heen weer langs de $x$-as, zie Fig. \ref{fig:tes}. De ondoordringbare muren staan op $x = 0$ en $x = L$.  Omdat er binnen de doos geen krachten of andere voorwerpen die het deeltje binnen de doos beïnvloeden zijn, is de potentiële energie $V$ op het deeltje binnen de doos is nul. Dus $V(x)=0$ bij $0 < x < L$. Als het deeltje bij de muren komt wordt het deeltje met een oneindig grote kracht de andere kant opgeduwd, want de muren zijn ondoordringbaar en de energie van het deeltje kan dus nooit groot genoeg zijn om door de muren te komen. De potentiële energie op het deeltje is dan oneindig groot wanneer het deeltje tegen de muur aankomt en de andere kant op wordt geduwd. Dus $V(x)=\infty$ bij $x\leq 0$ en $x\geq L$. Nu we dit weten kunnen de Schrödingervergelijking erbij halen en de tijdsonafhankelijke eendimensionale Schrödingervergelijking ziet er als volgt uit.
 \begin{displaymath}
 -\frac{h^2}{8\pi^2m}\cdot\frac{\delta^2\cdot \psi(x)}{\delta x^2}+V(x)\cdot \psi(x)=E\cdot\psi(x)
 \end{displaymath}
@@ -1299,7 +1300,7 @@ $m$ is de massa van het deeltje, $E$ is de totale energie en de constante van Pl
 &= -\frac{8\pi^2\cdot m\cdot E\cdot\psi(x)}{h^2}\\
 -\frac{8\pi^2\cdot m\cdot E\cdot\psi(x)}{h^2}\text{naar de linker kant halen geeft}\\
 \frac{\delta^2\cdot\psi(x)}{\delta x^2}+\frac{8\pi^2\cdot m\cdot E\cdot\psi(x)}{h^2}+V(x)\cdot\psi(x) &= 0\\
-V(x)\cdot\psi(x)\text{naar de rechter kant halen geeft}\\
+V(x)\cdot\psi(x)\text{naar de rechterkant halen geeft}\\
 \frac{\delta^2\cdot\psi(x)}{\delta x^2}+\frac{8\pi^2\cdot m\cdot E\cdot\psi(x)}{h^2} &= V(x)\cdot\psi(x)\\
 \end{align*}
 
@@ -1311,7 +1312,7 @@ Om de vergelijking op te lossen moeten we achter $\psi(x)$ komen. Als we de verg
 \begin{displaymath}
 \psi(x)=A\cdot \cos{\left(\sqrt{\frac{8\pi^2\cdot m\cdot E}{h^2}}\cdot x\right)}+B\cdot\sin{\left(\sqrt{\frac{8\pi^2\cdot m\cdot E}{h^2}}\cdot x\right)}
 \end{displaymath}
-$A$ en $B$ zijn hier constanten. We weten dat $\left|{\psi(x)}^2\right|$ aangeeft wat de kans is dat het deeltje op positie x is. Verder weten we dat het deeltje nooit buiten de doos kan zijn, oftewel op $x<0$ en $x>L$, omdat de energie die het deeltje nodig zou hebben om daar te komen oneindig groot zou moeten zijn. Ook kunnen we zeggen dat het deeltje niet in de muur kan komen, oftewel op $x=0$ en $x=L$, want de muren zijn ondoordringbaar. Omdat de kans dus nul is dat het deeltje in de muren om buiten de doos is kunnen we zeggen dat $\left|{\psi(x)}^2\right| = 0$ en dus $\psi(x)=0$ bij $x<0$ en $x>L$ en bij $x=0$ en $x=L$.
+$A$ en $B$ zijn hier constanten. We weten dat $\left|{\psi(x)}^2\right|$ aangeeft wat de kans is dat het deeltje op positie x is. Verder weten we dat het deeltje nooit buiten de doos kan zijn, oftewel op $x<0$ en $x>L$, omdat de energie die het deeltje nodig zou hebben om daar te komen oneindig groot zou moeten zijn. Ook kunnen we zeggen dat het deeltje niet in de muur kan komen, oftewel op $x=0$ en $x=L$, want de muren zijn ondoordringbaar. Omdat de kans dus nul is dat het deeltje in de muren of buiten de doos is kunnen we zeggen dat $\left|{\psi(x)}^2\right| = 0$ en dus $\psi(x)=0$ bij $x<0$ en $x>L$ en bij $x=0$ en $x=L$.
 
 De eerste situatie, $\psi=0$ bij $x=0$, geeft
 \begin{align*}
@@ -1354,9 +1355,9 @@ Daarna delen we $8\pi^2*m$ naar de rechterkant.
 E_n &= \frac{n^2\cdot\pi^2\cdot h^2}{L^2\cdot 8\pi^2\cdot m}\\
 &= \frac{n^2\cdot h^2}{8\cdot m\cdot L^2}
 \end{align*}
-Hier geldt $n=\{0, 1, 2, 3, \ldots\}$ Dit betekent dat $E_n$, het energieniveau van het deeltje, omhoog gaat met duidelijke stappen. Als $n=0$ zou het betekenen dan $\psi=0$ overal in de doos, wat zou betekenen dat het deeltje niet in de doos is, maar dit kan niet want we weten zeker dat het deeltje in de doos is. Dus eigenlijk geldt $n=\{0, 1, 2, 3, \ldots\}$ voor $E_n$.
+Hier geldt $n=\{0, 1, 2, 3, \ldots\}$ Dit zou betekenen dat $E_n$, het energieniveau van het deeltje, omhoog gaat met duidelijke stappen. Als $n=0$ zou het betekenen dan $\psi=0$ overal in de doos, wat zou betekenen dat het deeltje niet in de doos is, maar dit kan niet want we weten zeker dat het deeltje in de doos is. Dus eigenlijk geldt $n=\{0, 1, 2, 3, \ldots\}$ voor $E_n$.
 
-We moeten nu eerst een stap maken naar de eerder besproken kansdichtheid berekening. We hebben Vgl. \ref{eq:psipsi} al eerder vastgesteld.
+We moeten nu eerst een stap maken naar de eerder besproken kansdichtheidberekening. We hebben Vgl. \ref{eq:psipsi} al eerder vastgesteld.
 Om hier een kansberekening uit te krijgen moeten we de integraal hiervan nemen.
 \begin{displaymath}
 \int_0^L {\left|\Psi(x)\right|}^2\,dx=\int_0^L \left|{\psi(x)}^2\right|\,dx
@@ -1461,7 +1462,7 @@ Voordat we ons gaan verdiepen in de diepe troggen van de wiskunde van fractals m
 	\caption{Helge von Koch.}
 	\label{fig:koch}
 \end{figure}
-We nemen als voorbeeld de Koch Snowflake. De Zweedse wiskundige Helge von Koch maakte in 1904 de zogenaamde KochCurve door uit elk driehoeksbeen het midden uit te halen en daar weer een driehoek neer te zetten, zie Fig. \ref{fig:drie}. De sneeuwvlok die ontstaat door wiskunde figuren eindeloos volgens eenzelfde patroon te vermenigvuldigen. Neem de gelijkbenige driehoek. 
+We nemen als voorbeeld de Koch Snowflake. De Zweedse wiskundige Helge von Koch maakte in 1904 de zogenaamde KochCurve door uit elk driehoeksbeen het midden te halen en daar weer een driehoek neer te zetten, zie Fig. \ref{fig:drie}. De sneeuwvlok die ontstaat door wiskundefiguren eindeloos volgens eenzelfde patroon te vermenigvuldigen. Neem de gelijkbenige driehoek. 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{drie}
 	\caption{Driehoeken in driehoeken.}
@@ -1476,7 +1477,7 @@ We nemen als voorbeeld de Koch Snowflake. De Zweedse wiskundige Helge von Koch m
 De wiskundige formule is eigenlijk heel eenvoudig. Je gaat uit van: 
 \begin{enumerate}
 \item Eén zijde van een driehoek, wordt omgevormd tot 4 zijden, Fig. \ref{fig:drie}
-\item Een driehoek heeft drie zijden die allen omgevormd worden tot 4 zijden, Fig. \ref{fig:vlok}. 
+\item Een driehoek heeft drie zijden die alle omgevormd worden tot 4 zijden, Fig. \ref{fig:vlok}. 
 \item Dit herhaalt zich dus.....eindeloos.
 \end{enumerate}
 Wiskundig geformuleerd:
@@ -1504,14 +1505,14 @@ Nu hebben alle getallen die groter of kleiner zijn dan 1 een eindstation waar ze
 	\caption{De functie $y=x^2$, groene lijn naar 0.}
 	\label{fig:fx9}
 \end{figure}
-Met deze informatie zijn we al een heel stuk op weg, maar met deze toepassingen blijven we met het aantrekkingspunt 0 en zal er dus nooit een mooi groot fractal figuur uitkomen. Daarom moeten we ervoor zorgen dat de parabool waar we het hierboven over hadden moet kunnen worden verplaats. De parabool verticaal verplaatsen doen we door er een $c$ bij toe te voegen. De formule wordt dan $y=x^2+c$. Het minimum van de parabool is dan $c$, elk cijfer wat er als c wordt gebruikt staat gelijk aan het minimum van de parabool. Als we dan teruggaan naar het begrip itereren en die toepassing uitvoeren zien we dat er nog steeds een aantrekkingspunt is alleen dat is niet meer 0, er is een ander aantrekkingspunt is gekomen, Fig. \ref{fig:fx10}.
+Met deze informatie zijn we al een heel stuk op weg, maar met deze toepassingen houden we het aantrekkingspunt 0 en zal er dus nooit een mooi groot fractal figuur uitkomen. Daarom moeten we ervoor zorgen dat de parabool waar we het hierboven over hadden moet kunnen worden verplaatst. De parabool verticaal verplaatsen doen we door er een $c$ bij toe te voegen. De formule wordt dan $y=x^2+c$. Het minimum van de parabool is dan $c$, elk cijfer wat er als c wordt gebruikt staat gelijk aan het minimum van de parabool. Als we dan teruggaan naar het begrip itereren en die toepassing uitvoeren zien we dat er nog steeds een aantrekkingspunt is alleen dat is niet meer 0, er is een ander aantrekkingspunt gekomen, Fig. \ref{fig:fx10}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx10}
 	\caption{De functie $y=x^2+c$ met $c=-0,5$.}
 	\label{fig:fx10}
 \end{figure}
-We zien in Fig. \ref{fig:fx10} nu weer een aantrekker alleen is de aantrekker niet nul. De aantrekker is precies het snijpunt van de parabool met de diagonaal. Het andere snijpunt die te zien is in het figuur heeft ook een functie namelijk wanneer de startwaarde bij een iteratie, een getal is die rechts van het snijpunt ligt, gaat die naar oneindig. Voor de snijpunten geldt hiervoor ook de volgende formule $y=x^2+c$ met nog steeds $c=-0,5$, als we die tegen de formule van de parabool zetten krijgen we daar snijpunten uit namelijk: -0,366 en 1,366
-Met alles even op een rijtje voor de formule van $y=x^2+c$ met als $c= -0,5$ worden alle getallen met als start waarden tussen -1,366 en 1,366 aangetrokken door het punt -0,366.
+We zien in Fig. \ref{fig:fx10} nu weer een aantrekker alleen is de aantrekker niet nul. De aantrekker is precies het snijpunt van de parabool met de diagonaal. Het andere snijpunt dat te zien is in het figuur heeft ook een functie namelijk wanneer de startwaarde bij een iteratie een getal is die rechts van het snijpunt ligt, gaat die naar oneindig. Voor de snijpunten geldt hiervoor ook de volgende formule $y=x^2+c$ met nog steeds $c=-0,5$, als we die tegen de formule van de parabool zetten krijgen we daar snijpunten uit namelijk: -0,366 en 1,366
+Met alles even op een rijtje voor de formule van $y=x^2+c$ met als $c= -0,5$ worden alle getallen met als startwaarden tussen -1,366 en 1,366 aangetrokken door het punt -0,366.
 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx8}
@@ -1533,23 +1534,23 @@ Een nog interessanter fenomeen is als we de c nog meer verlagen dan -1,25 er een
 Deze opmerkelijke fenomenen zijn allemaal samengevat in Fig. \ref{fig:fx11}. Een korte toelichting aan dit toch wel merkwaardige figuur. Voor elke waarde van $c$ zijn de aantrekkers als rode of groene punten aangegeven op een horizontale lijn door $c$. Bijvoorbeeld voor $c = -1.00$ is er een dubbele aantrekker gevonden: 0 en -1. Trekken we een horizontale lijn door het punt $y = -1$ dan zie je dat die inderdaad de boom snijdt in de punten 0 en -1. 
 Trek je de horizontale lijn wat lager, dan passeer je een vertakking en krijg je vier snijpunten en zo zijn er nog veel meer snijpunten.
 Wat dieper begint de chaos: de hele lijn is groen. 
-De groene waas in het figuur wordt de vertakkingsboom van Feigenbaum genoemd. De vertakking is vernoemd naar de Amerikaanse wiskundige Mitchell Feigenbaum, die rond 1975 onderzoek deed op dit gebied. Als je het plaatsje omkeert lijkt het wel een beetje op een boom, daarom ook de vertakkingsboom. Nu komen we al wel heel dichtbij want de Feigenbaum is namelijk een Fractal!
+De groene waas in het figuur wordt de vertakkingsboom van Feigenbaum genoemd. De vertakking is vernoemd naar de Amerikaanse wiskundige Mitchell Feigenbaum, die rond 1975 onderzoek deed op dit gebied. Als je het plaatje omkeert lijkt het wel een beetje op een boom, daarom ook de vertakkingsboom. Nu komen we al wel heel dichtbij want de Feigenbaum is namelijk een Fractal!
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx12}
 	\caption{De functie $y=x^2+c$, zonder assenstelsel (Feigenbaum).}
 	\label{fig:fx12}
 \end{figure}
-Om terugkomen op de groene waas of beter gezegd de Feigenbaum Fractal, Fig. \ref{fig:fx12}. De boom is in dit figuur uitvergroot en zonder stam (de parabool) weergegeven. In het figuur is te zien dat het gebied waar periodeverdubbeling optreedt eindigt bij een waarde van $c = -1,401155\ldots$ 
+Om terug te komen op de groene waas of beter gezegd de Feigenbaum Fractal, Fig. \ref{fig:fx12}. De boom is in dit figuur uitvergroot en zonder stam (de parabool) weergegeven. In het figuur is te zien dat het gebied waar periodeverdubbeling optreedt eindigt bij een waarde van $c = -1,401155\ldots$ 
 Als de c nog negatiever wordt, dan zijn er nog steeds gebieden met x-waardes die worden aangetrokken, maar er ontstaat geen herhalend patroon. De aantrekker is een vreemde aantrekker geworden. De iteraties die daarna komen leveren chaos op. In dit groene chaosgebied zijn nog wel kleine stukjes regelmaat te zien die vervolgens weer overlopen tot chaos. Met het groene vlak is duidelijk te zien dat we niet kunnen voorspellen wat er gaat gebeuren, dat noemen we chaos. 
-Als we alles even op een rijtje leggen blijk het volgende: 
-In het verdubbelingsgebied is alles voorspelbaar. Daar komt een startwaarde van $x$ komt in een cyclus terecht. Wanneer we een andere startwaarde kiezen, is het begin misschien  verschillend, maar ook dan kom je in dezelfde cyclus terecht. In het chaotisch gebied komt een startwaarde van $x$ niet meer in een cyclus terecht, maar springt op chaotische wijze heen en weer.
+Als we alles even op een rijtje zetten, blijkt het volgende: 
+In het verdubbelingsgebied is alles voorspelbaar. Daar komt een startwaarde van $x$ in een cyclus terecht. Wanneer we een andere startwaarde kiezen, is het begin misschien  verschillend, maar ook dan kom je in dezelfde cyclus terecht. In het chaotisch gebied komt een startwaarde van $x$ niet meer in een cyclus terecht, maar springt op chaotische wijze heen en weer.
 Bovendien blijkt dat voor andere startwaarden, zelfs als ze vlak in de buurt van de eerste liggen, de iteraties al snel van elkaar gaan verschillen.
 
 \section{Gevoelens voor wiskunde}
-Deze gevoeligheid en precieze voor de keuze van de startwaarde is kenmerkend voor alle chaotische systemen. Fig. \ref{fig:fx12} die we nu besproken hebben is slechts een simpel voorbeeld. De chaostheorie die in de zeventiger jaren van de vorige eeuw opkwam, ontdekte dat chaotische systemen overal voorkomen. Een bekend en leuk voorbeeld van een chaotisch systeem zijn de processen rond luchtdruk en temperatuur, die zich in de atmosfeer bevinden en zo dus ook het weer bepalen. De Amerikaanse meteoroloog Lorenz ontdekte in die tijd min of meer bij toeval dat de resultaten van zijn modelberekeningen heel anders werden wanneer hij  zijn invoergegevens gebruikte die een fractie verschillend waren. Deze extreme gevoeligheid voor de startwaarde betekent in de praktijk onvoorspelbaarheid. We kunnen bijvoorbeeld bij het weersysteem super erg ons best doen om de beginwaarden zoals de temperaturen of de luchtdrukken nauwkeurig op te meten. Maar hoe precies het ook is er zal altijd een onzekerheid overblijven. Als de temperatuur bijvoorbeeld een bepaalde dag $0,1\si{\degree}$ verkeerd wordt gemeten, is de afwijking van de weersvoorspelling voor de dag erna al $0,5\si{\degree}$. Na een week kan er dan al een verschil van meer dan $3\si{\degree}$ naast zitten. Een weersvoorspelling voor meer dan twee weken is dan niet zinvol meer. Tegenwoordig worden weersvoorspellingen gedaan door het oplossen van een aantal gekoppelde differentiaalvergelijkingen. Van deze differentiaalvergelijkingen zijn meestal geen exacte oplossingen bekend, maar een numerieke doorberekening kan natuurlijk wel worden gedaan met behulp van veel computerwerk. In de praktijk betekent dit dat er met de weergegevens van een bepaalde dag, die van de dag erna kunnen worden berekend. Het blijkt dat gekoppelde differentiaalvergelijkingen instabiel kunnen zijn. Dat betekend dat er een vorm van chaos in voor komt. Hier geldt ook dat kleine verschillen in beginwaarden veroorzaakt door bijvoorbeeld afrondingsfouten. Een enorme impact hebben in het eindresultaat van de berekening.
+Deze gevoeligheid en preciesie voor de keuze van de startwaarde is kenmerkend voor alle chaotische systemen. Fig. \ref{fig:fx12} die we nu besproken hebben is slechts een simpel voorbeeld. De chaostheorie die in de zeventiger jaren van de vorige eeuw opkwam, ontdekte dat chaotische systemen overal voorkomen. Een bekend en leuk voorbeeld van een chaotisch systeem zijn de processen rond luchtdruk en temperatuur, die zich in de atmosfeer bevinden en zo dus ook het weer bepalen. De Amerikaanse meteoroloog Lorenz ontdekte in die tijd min of meer bij toeval dat de resultaten van zijn modelberekeningen heel anders werden wanneer hij  zijn invoergegevens gebruikte die een fractie verschillend waren. Deze extreme gevoeligheid voor de startwaarde betekent in de praktijk onvoorspelbaarheid. We kunnen bijvoorbeeld bij het weersysteem super erg ons best doen om de beginwaarden zoals de temperaturen of de luchtdrukken nauwkeurig op te meten. Maar hoe precies het ook is er zal altijd een onzekerheid overblijven. Als de temperatuur bijvoorbeeld een bepaalde dag $0,1\si{\degree}$ verkeerd wordt gemeten, is de afwijking van de weersvoorspelling voor de dag erna al $0,5\si{\degree}$. Na een week kan er dan al een verschil van meer dan $3\si{\degree}$ naast zitten. Een weersvoorspelling voor meer dan twee weken is dan niet zinvol meer. Tegenwoordig worden weersvoorspellingen gedaan door het oplossen van een aantal gekoppelde differentiaalvergelijkingen. Van deze differentiaalvergelijkingen zijn meestal geen exacte oplossingen bekend, maar een numerieke doorberekening kan natuurlijk wel worden gedaan met behulp van veel computerwerk. In de praktijk betekent dit dat er met de weergegevens van een bepaalde dag, die van de dag erna kunnen worden berekend. Het blijkt dat gekoppelde differentiaalvergelijkingen instabiel kunnen zijn. Dat betekent dat er een vorm van chaos in voor komt. Hier geldt ook dat kleine verschillen in beginwaarden, veroorzaakt door bijvoorbeeld afrondingsfouten, een enorme impact hebben op het eindresultaat van de berekening.
 
 \section{De Chaostheorie}
-De Chaostheorie is een populair wetenschappelijke benaming voor de theorie van de dynamische systemen. Anders dan de benaming waarmee mijn moeder de toestand van mijn slaapkamer thuis doorgaans beschrijft, wordt hier een technisch wiskundige betekenis bedoeld. Of wel: het onderzoek naar omstandigheden waarbij een deterministische chaos optreedt en welke eigenschappen die chaos heeft. Met een deterministische chaos wordt bedoeld dat de schijnbare wanorde toch exact bepaald is en geordend tot stand komt volgens een algoritme bijvoorbeeld een differentiaalvergelijking of een recursieve berekening. Hiermee kan de stabiliteit en betrouwbaarheid van systemen worden gecontroleerd.
+De Chaostheorie is een populair wetenschappelijke benaming voor de theorie van de dynamische systemen. Anders dan de benaming waarmee mijn moeder de toestand van mijn slaapkamer thuis doorgaans beschrijft, wordt hier een technisch wiskundige betekenis bedoeld. Of wel: het onderzoek naar omstandigheden waarbij een deterministische chaos optreedt en welke eigenschappen die chaos heeft. Met een deterministische chaos wordt bedoeld dat de schijnbare wanorde toch exact bepaald is en geordend tot stand komt volgens een algoritme, bijvoorbeeld een differentiaalvergelijking of een recursieve berekening. Hiermee kan de stabiliteit en betrouwbaarheid van systemen worden gecontroleerd.
 \begin{enumerate}
 \item de complexiteit van het systeem
 \item de verscheidenheid van de factoren die veranderingen in die systemen veroorzaakten 
@@ -1563,7 +1564,7 @@ Met de ontwikkeling van de systeemtheorie werd het duidelijk dat dit niet zo is.
 
 \section{De vlinder en de orkaan}
 Om even een uitstapje te maken van de moeilijke wiskunde is hier een kleine anekdote die te maken heeft met een van de vele chaostheorieën: the butterfly effect.
-De meteoroloog Edward Lorenz introduceerde in 1960 de term The Butterfly Effect. In de anekdote wordt dan gesteld dat een enkele vleugelbeweging van een vlinder in het Amazonegebied voor het verschil kan zorgen voor de weersvoorspelling van of een zonovergoten dag of een hevige storm in Europa: het Butterfly Effect. Hoewel een systeem dus deterministisch kan zijn, wat betekent dat een toekomstige toestand volledig wordt bepaald door de initiële toestand, zonder dat er toeval elementen aan te pas komen, zijn deze systemen dus toch niet voorspelbaar. Deze eigenschap wordt de "deterministische chaos" of kortweg chaos genoemd.
+De meteoroloog Edward Lorenz introduceerde in 1960 de term The Butterfly Effect. In de anekdote wordt dan gesteld dat een enkele vleugelbeweging van een vlinder in het Amazonegebied voor het verschil kan zorgen voor de weersvoorspelling van of een zonovergoten dag of een hevige storm in Europa: het Butterfly Effect. Hoewel een systeem dus deterministisch kan zijn, wat betekent dat een toekomstige toestand volledig wordt bepaald door de initiële toestand, zonder dat er toevalselementen aan te pas komen, zijn deze systemen dus toch niet voorspelbaar. Deze eigenschap wordt de "deterministische chaos" of kortweg chaos genoemd.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{bradbury}
 	\caption{A sound of Thunder, door Bradbury.}
@@ -1577,7 +1578,7 @@ Aan dit verhaal is duidelijk te zien wat voor effect een kleine verandering kan 
 
 \section{Fractals in fractals}
 We zijn dan eindelijk aangekomen bij het onderdeel waar we gaan kijken wat een fractal eigenlijk is.
-Fractals zijn meetkundige figuren met als kenmerk dat alle onderdelen nagenoeg dezelfde meetkundige vormen hebben als het origineel maar dan op steeds kleinere schaal. Dat wilt dus zeggen; als je een fractal zou vergroten met een vergrootglas krijg je steeds weer precies hetzelfde plaatje te zien. Ongeacht de plek waar je kijkt binnen het figuur. Een goed voorbeeld hiervan is de beroemde Mandelbrot Fractal, zie Fig. \ref{fig:mf}\cite{mandelbrot}.
+Fractals zijn meetkundige figuren met als kenmerk dat alle onderdelen nagenoeg dezelfde meetkundige vormen hebben als het origineel, maar dan op steeds kleinere schaal. Dat wilt dus zeggen; als je een fractal zou vergroten met een vergrootglas krijg je steeds weer precies hetzelfde plaatje te zien. Ongeacht de plek waar je kijkt binnen het figuur. Een goed voorbeeld hiervan is de beroemde Mandelbrot Fractal, zie Fig. \ref{fig:mf}\cite{mandelbrot}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{mf}
 	\caption{Mandelbrot fractal.}
@@ -1609,24 +1610,25 @@ vervolgens wordt hier de 'oude' $c$ bij opgeteld en dan krijg je het volgende.
 (3,75+2i)+(2+0,5i)=5,75+2,5i
 \end{displaymath}
 
-Hierboven is de eerste stap van het zogenaamde iteratieproces gemaakt. Je kunt zeggen dat de Mandelbrot Fractal uit oneindig veel van dit soort iteratieprocessen bestaat. Deze iteratieprocessen zijn erg belangrijk voor het maken en begrijpen van fractals \cite{fracmachine}. We gaan nu dieper in de ontstaan van fractals in het complexe vlak.    
+Hierboven is de eerste stap van het zogenaamde iteratieproces gemaakt. Je kunt zeggen dat de Mandelbrot Fractal uit oneindig veel van dit soort iteratieprocessen bestaat. Deze iteratieprocessen zijn erg belangrijk voor het maken en begrijpen van fractals \cite{fracmachine}. We gaan nu dieper in op het ontstaan van fractals in het complexe vlak.    
 
 \section{Complexe fractals}
-We zijn eindelijk op het punt gekomen waar we het complexe getal gaan toevoegen aan een Fractal formule \cite{fraccomplexegetallen}. We beginnen weer met de formule $y=x^2+c$. We gebruiken aantrekkingspunten nu niet meer als stukjes van een getallen lijn maar als gedeeltes van het complexe vlak. We beginnen bij Fig. \ref{fig:fx13}. Het grijze vlak geeft hier de aangetrokken getallen aan en het rode sterretje is de aantrekker. In het figuur hiernaast geldt $c=0$ weer. De uitkomst is niet verassend, zoals we al eerder besproken hebben trekken alle reële getallen die tussen -1 en 1 zitten naar het punt 0. In het complexe vlak ziet dat eruit als een cirkelvormig figuur.
+We zijn eindelijk op het punt gekomen waar we het complexe getal gaan toevoegen aan een Fractal formule \cite{fraccomplexegetallen}. We beginnen weer met de formule $y=x^2+c$. We gebruiken aantrekkingspunten nu niet meer als stukjes van een getallenlijn maar als gedeeltes van het complexe vlak. We beginnen bij Fig. \ref{fig:fx13}. Het grijze vlak geeft hier de aangetrokken getallen aan en het rode sterretje is de aantrekker. In het figuur hiernaast geldt $c=0$ weer. De uitkomst is niet verassend, zoals we al eerder besproken hebben trekken alle reële getallen die tussen -1 en 1 zitten naar het punt 0. In het complexe vlak ziet dat eruit als een cirkelvormig figuur.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx13}
 	\caption{Fractal in complex vlak met $c=0$.}
 	\label{fig:fx13}
 \end{figure}
-Als we de $c$ gaan veranderen veranderd de vorm van het figuur ook. Als we $c=-0,5$ nemen hadden we gevonden dat alle getallen met als start waarden tussen -1,366 en 1,366 aangetrokken door het punt -0,366. Als we die uitkomsten in een complex vlak zouden zetten. Ziet het er uit als in Fig. \ref{fig:fx14}. De rafelige randen van dit figuur begint al meet te lijken op een fractal maar is nog aardig af te leiden van de cirkelvorming.
-Om van die afleiding af te komen hebben we meer dan een aantrekkingspunt nodig. 
+Als we de $c$ gaan veranderen, verandert de vorm van het figuur ook. Als we $c=-0,5$ nemen hadden we gevonden dat alle getallen met als start waarden tussen -1,366 en 1,366 worden aangetrokken door het punt -0,366. Als we die uitkomsten in een complex vlak zouden zetten, ziet het er uit als in Fig. \ref{fig:fx14}. De rafelige randen van dit figuur beginnen al meer te lijken op een fractal maar zijn nog aardig af te leiden van de cirkelvorming.
+Om van die afleiding af te komen hebben we meer dan één aantrekkingspunt nodig. 
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{fx14}
 	\caption{Fractal in complex vlak met $c=-0,5$.}
 	\label{fig:fx14}
 \end{figure}
-Bij $c=-1$ hadden we gezien dat er twee aantrekkingspunten zijn. De waardes van die aantrekkingspunten zijn 0 en -1. De vorm die hier uitkomt is voor het eerst bedacht zonder computer of rekenmachine door de Franse wiskundige Gaston Julia. En is te zien in Fig. \ref{fig:julfrac}. Dit soort figuren worden daarom ook Julia fractals genoemd. Dit figuur is al minder af te leiden van een cirkel en heeft met de sprietjes iets weg van de Mandelbrot Fractal.
-Bij een Julia Fractal zijn de gebieden van het complexe vlak (in de tekening aan geven als grijs vlakdeel) voor gegeven waarde van $c$, bij het irriteren niet naar oneindig gegaan.
+Bij $c=-1$ hadden we gezien dat er twee aantrekkingspunten zijn. De waardes van die aantrekkingspunten zijn 0 en -1. De vorm die hier uitkomt is voor het eerst bedacht zonder computer of rekenmachine door de Franse wiskundige Gaston Julia en is te zien in Fig. \ref{fig:julfrac}. Dit soort figuren worden daarom ook Julia Fractals genoemd. Dit figuur is al minder af te leiden van een cirkel en heeft met de sprietjes iets weg van de Mandelbrot Fractal.
+
+Bij een Julia Fractal zijn de gebieden van het complexe vlak (in de tekening aan geven als grijs vlakdeel) voor de gegeven waarde van $c$, bij het itereren niet naar oneindig gegaan.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{julfrac}
 	\caption{Fractal in complex vlak met $c=-1$.}
@@ -1646,7 +1648,7 @@ Om naar een bekende Julia Fractal te kunnen gaan moeten we nog een stapje verder
 	\label{fig:jul2frac}
 \end{figure}
 
-Zoals eerder is gezegd geeft het grijze vlak de aangetrokken punten weer. De rest eromheen itereert naar het oneindige. Met die kennis kleuren we Fig. \ref{fig:jul2frac} in. We tekenen de vorm zelf zwart. Van de gebieden die buiten het figuur liggen bepalen we hoeveel keer het nodig is om te irriteren voordat de uitkomst de zelf gekozen grenswaarde heeft bereikt. Aan de hand van de hoeveelheid iteraties geven we elk punt een kleur. Op die manier hebben we Fig. \ref{fig:jul2frac} ingetekend. De c waarde heeft dezelfde waarde als Fig. \ref{fig:jul2frac}. De kleuren zijn als volgt te verklaren, naarmate het langer duurt voor het itereren de grenswaarde heeft bereikt, hoe lichter de kleur is. Zo kan er veel geknutseld worden met Fractals en kunnen er mooie figuren uitkomen.
+Zoals eerder is gezegd geeft het grijze vlak de aangetrokken punten weer. De rest eromheen itereert naar het oneindige. Met die kennis kleuren we Fig. \ref{fig:jul2frac} in. We tekenen de vorm zelf zwart. Van de gebieden die buiten het figuur liggen bepalen we hoeveel keer het nodig is om te itereren voordat de uitkomst de zelf gekozen grenswaarde heeft bereikt. Aan de hand van de hoeveelheid iteraties geven we elk punt een kleur. Op die manier hebben we Fig. \ref{fig:jul2frac} ingetekend. De c waarde heeft dezelfde waarde als Fig. \ref{fig:jul2frac}. De kleuren zijn als volgt te verklaren, naarmate het langer duurt voor het itereren de grenswaarde heeft bereikt, hoe lichter de kleur is. Zo kan er veel geknutseld worden met Fractals en kunnen er mooie figuren uitkomen.
 
 We hebben nu gezien hoe een Julia Fractal wordt gemaakt met behulp van complexe getallen. In het begin hebben we gezien dat de reële getallen binnen -2 en 0,25. Dat is een makkelijke en duidelijke richtlijn om een Julia fractal te maken met behulp van reële getallen. Die richtlijn bestaat er ook voor de complexe getallen en is terug te vinden in de Mandelbrot fractal.
 Want met de Mandelbrot fractal is er iets heel bijzonders aan de hand. De Mandelbrot Fractal is namelijk een verzameling van alle complexe c-waarden die aantrekkingsgebieden creëren in een Julia Fractal.
@@ -1664,7 +1666,7 @@ De fractale wiskunde had een grote populariteit aan het eind van de vorige eeuw.
 	\label{fig:blaadje}
 \end{figure}
 Een andere theorie waar Fractals in worden gebruikt is debifurcatietheorie, die theorie beschrijft hoe het evenwichtsgedrag van een dynamisch systeem verandert onder invloed van externe factoren. Uit deze theorie komt de fractal De Poincaré-afbeelding die ook onder meer gebuikt wordt bij de chaostheorie. 
-Fractals worden ook gebruikt bij het karateriseren van kleine of ruwe structuren, bijvoorbeeld blaadjes van varens met een ruwe achterkant of de takstructuur van een boom. Misschien wel de meest actuele toepassing van fractals is het voorspellen van gebeurtenissen. Zoals in de inleiding staat wordt het ontstaan van het heelal aan de hand van fractals voorspeld, maar ook het gedrag van de beurs wordt aan de hand van een fractal voorspeld \cite{opdebeurs}.
+Fractals worden ook gebruikt bij het karakteriseren van kleine of ruwe structuren, bijvoorbeeld blaadjes van varens met een ruwe achterkant of de takstructuur van een boom. Misschien wel de meest actuele toepassing van fractals is het voorspellen van gebeurtenissen. Zoals in de inleiding staat wordt het ontstaan van het heelal aan de hand van fractals voorspeld, maar ook het gedrag van de beurs wordt aan de hand van een fractal voorspeld \cite{opdebeurs}.
 \begin{figure}[h]
 	\centering\includegraphics[scale=1]{superfrac}
 	\caption{De schoonheid van een fractal.}
@@ -1675,8 +1677,9 @@ Fractals worden ook gebruikt bij het karateriseren van kleine of ruwe structuren
 	\caption{De poincaré-afbeelding.}
 	\label{fig:superfrac}
 \end{figure} 
-Een leuk voorbeeld over voorspellen is bij het boren naar olie. Bij het boren naar olie gaat de boor waar mee gegraven wordt opeens heftig trillen en gaat kapot, zonder een concrete aanleiding. De trillingen lijken op een fractal waarmee men vervolgens door te modelleren een simulatie van het boorproces mee simuleert en zo de oorzaak zoeken van de trillingen, zodat de boor niet opnieuw stuk gaat.
-Ook de schoonheid van fractals mag zeker niet worden vergeten en is ook een van de redenen waarom het zo populair is geworden \cite{fractoepassingen}.
+Een leuk voorbeeld over voorspellen is bij het boren naar olie. Bij het boren naar olie gaat de boor waar mee gegraven wordt opeens heftig trillen en kapot, zonder een concrete aanleiding. De trillingen lijken op een fractal waarmee men vervolgens door te modelleren  het boorproces simuleert en zo de oorzaak zoekt van de trillingen, zodat de boor niet opnieuw stuk gaat.
+
+Ook de schoonheid van fractals mag zeker niet worden vergeten en is daarom een van de redenen waarom het zo populair is geworden \cite{fractoepassingen}.
 
 %----------------------------------------------------------------------------------------
 %	PART 3
@@ -1719,7 +1722,14 @@ We hebben ook gezien dat fractals iets met elkaar te maken kunnen hebben. Zoals 
 
 Fractals komen we overal tegen en wordt op veel verschillende draagvlakken toegepast.
 
-Door het toevoegen van de complexe getallen krijgen fractals veel meer mogelijkheden en kunnen ze meer en vaker worden gebruikt bij de toepassingen van fractals. 
+Door het toevoegen van de complexe getallen krijgen fractals veel meer mogelijkheden en kunnen ze meer en vaker worden gebruikt bij de toepassingen van fractals.
+
+\section{Algemene conclusie}
+Complexe getallen zijn bijzondere getallen die zo'n beetje overal toegepast kunnen worden. Als het nog niet bedacht is, dan kan dat zelfs nog komen. We hebben verschillende toepassingen bekeken in dit onderzoek. Het gebruik van complexe getallen in deze toepassingen verschilde erg. Bij de ene was het om een formule te vereenvoudigen, de andere zorgt ervoor dat iets onmogelijks ineens mogelijk wordt.
+We kunnen zeker stellen dat complexe getallen vooral toegepast worden in formules. Denk aan waarschijnlijkheidsformules zoals de Schrödingervergelijking; transformaties zoals de fouriertransformatie; functies zoals fractals. Bij de ene vergelijking is het om iets anders onmogelijks te doen, bij het andere is het om een vergelijking te versimpelen.
+Het is ook zo dat complexe getallen voor meer mogelijkheden binnen de wiskunde zorgen. Te beginnen bij simpele vergelijkingen die met reële getallen niet op te lossen zijn. Natuurlijk blijft dit niet bij simpele formules, maar is nu ook ineens de Schrödingervergelijking mogelijk. Ook kunnen er nu meer fractals gemaakt worden.
+
+Nu we dat gezegd hebben, kunnen we ook zeggen dat niet iedere toepassing van complexe getallen hetzelfde is. Niet bij iedere toepassing worden complexe getallen voor hetzelfde doeleinde gebruikt. Laten we terugkomen op onze hypothese (Sec. \ref{sec:hypo}). Deze kunnen we deels bevestigen. Complexe getallen worden wel zeker gebruikt bij het berekenen van problemen die niet direct te voorspellen of te meten zijn. Het is wel een deel van alle toepassingen, maar het is er niet aan gelimiteerd. Het is wel zeker zo dat deze extra getallenverzameling extra dingen mogelijk maakt. Fascinerend.
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -1753,17 +1763,14 @@ Door het toevoegen van de complexe getallen krijgen fractals veel meer mogelijkh
 \addcontentsline{toc}{subsection}{Fractals}
 \printbibliography[heading=bibempty,keyword=frac]
 
+\section*{Deel Drie}
+\addcontentsline{toc}{section}{Deel Drie}
+
 \section*{Conclusie}
 \addcontentsline{toc}{subsection}{Conclusie}
 \printbibliography[heading=bibempty,keyword=conc]
 
-\section*{Algemene conclusie}
-\addcontentsline{toc}{subsection}{Algemene conclusie}
-Complexe getallen zijn bijzondere getallen die zo'n beetje overal toegepast kunnen worden. Als het nog niet bedacht is, dan kan dat zelfs nog komen. We hebben verschillende toepassingen bekeken in dit onderzoek. Het gebruik van complexe getallen in deze toepassingen verschilde erg. Bij de ene was het om een formule te vereenvoudigen, de andere zorgt ervoor dat iets onmogelijks ineens mogelijk wordt.
-We kunnen zeker stellen dat complexe getallen vooral toegepast worden in formules. Denk aan waarschijnlijkheidsformules zoals de Schrödingervergelijking; transformaties zoals de fouriertransformatie; functies zoals fractals. Bij de ene vergelijking is het om iets anders onmogelijks te doen, bij het andere is het om een vergelijking te versimpelen.
-Het is ook zo dat complexe getallen voor meer mogelijkheden binnen de wiskunde zorgen. Te beginnen bij simpele vergelijkingen die met reële getallen niet op te lossen zijn. Natuurlijk blijft dit niet bij simpele formules, maar is nu ook ineens de Schrödingervergelijking mogelijk. Ook kunnen er nu meer fractals gemaakt worden.
 
-Nu we dat gezegd hebben, kunnen we ook zeggen dat niet iedere toepassing van complexe getallen hetzelfde is. Niet bij iedere toepassing worden complexe getallen voor hetzelfde doeleinde gebruikt. Het is wel zeker zo dat deze extra getallenverzameling extra dingen mogelijk maakt. Fascinerend.
 
 %----------------------------------------------------------------------------------------
 %	INDEX
